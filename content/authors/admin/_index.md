@@ -6,15 +6,15 @@ title: Justin D. Norman
 superuser: true
 
 # Role/position/tagline
-role: PhD Student @ UC Berkeley | Computer Vision & ML/AI Research Consultant 
+role: PhD Student @ Berkeley | Computer Vision & ML/AI Research Consultant 
 
 # Organizations/Affiliations to show in About widget
 organizations:
-- name: Stanford University
+- name: UC Berkeley
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+bio: 
 
 # Interests to show in About widget
 interests:
@@ -27,15 +27,18 @@ interests:
 # Education to show in About widget
 education:
   courses:
-  - course: PhD in Artificial Intelligence
-    institution: Stanford University
-    year: 2012
-  - course: MEng in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2009
-  - course: BSc in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2008
+  - course: PhD in Computer Vision | Computation Photography | Machine Learning
+    institution: UC Berkeley
+    year: 2020 - Present
+  - course: MBA
+    institution: University of Southern California 
+    year: 2015
+  - course: Master's Certificate in Technology Commercialization
+    institution: University of Southern California 
+    year: 2015
+  - course: BS in Computer Science
+    institution: United States Naval Academy
+    year: 2007
 
 # Social/Academic Networking
 # For available icons, see: https://wowchemy.com/docs/getting-started/page-builder/#icons
