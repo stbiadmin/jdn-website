@@ -6,7 +6,7 @@ title: Justin D. Norman
 superuser: true
 
 # Role/position/tagline
-role: PhD Student @ Berkeley | Computer Vision & ML/AI Research Consultant 
+role: PhD Student @ Berkeley | Computer Vision & ML/AI Consultant 
 
 # Organizations/Affiliations to show in About widget
 organizations:
@@ -18,16 +18,16 @@ bio:
 
 # Interests to show in About widget
 interests:
-- Computational Photography
 - Computer Vision
 - Machine Learning
-- MLOPS | Data Engineering | ML Systems Design
+- MLOPS | Data Engineering
+- ML Systems Design
 
 
 # Education to show in About widget
 education:
   courses:
-  - course: PhD in Computer Vision | Computation Photography | Machine Learning
+  - course: PhD in Computer Vision | Computational Photography | Machine Learning
     institution: UC Berkeley
     year: 2025 (expected)
   - course: MBA w/ concentration in Business Analytics
@@ -50,7 +50,7 @@ social:
   link: '/#contact'
 - icon: twitter
   icon_pack: fab
-  link: https://twitter.com/GeorgeCushen
+  link: https://twitter.com/justinjdn
 - icon: graduation-cap  # Alternatively, use `google-scholar` icon from `ai` icon pack
   icon_pack: fas
   link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
