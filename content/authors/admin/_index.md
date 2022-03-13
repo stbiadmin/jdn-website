@@ -6,10 +6,7 @@ title: Justin D. Norman
 superuser: true
 
 # Role/position/tagline
-role: 
-PhD Student @ UC Berkeley  
-ML/AI Executive Consultant 
-Computer Vision Researcher
+role: PhD Student @ UC Berkeley | ML/AI Consultant | Computer Vision Researcher
 
 # Organizations/Affiliations to show in About widget
 organizations:
