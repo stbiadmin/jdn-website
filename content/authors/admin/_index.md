@@ -29,8 +29,8 @@ education:
   courses:
   - course: PhD in Computer Vision | Computation Photography | Machine Learning
     institution: UC Berkeley
-    year: 2020 - Present
-  - course: MBA
+    year: 2025 (expected)
+  - course: MBA w/ concentration in Business Analytics
     institution: University of Southern California 
     year: 2015
   - course: Master's Certificate in Technology Commercialization
@@ -59,7 +59,7 @@ social:
   link: https://github.com/gcushen
 - icon: linkedin
   icon_pack: fab
-  link: https://www.linkedin.com/
+  link: https://www.linkedin.com/in/justindnorman/
 
 # Link to a PDF of your resume/CV.
 # To use: copy your resume to `static/uploads/resume.pdf`, enable `ai` icons in `params.toml`, 
