@@ -46,7 +46,7 @@ experience:
     date_start: '2019-11-01'
     date_end: '2021-12-31'
     description:  As the head of Data Science and Data Product at Yelp, was responsible for five functional Data Science teams and the corporate Data Product Management team, as well as the Yelp DS/ML experimentation platform (Bunsen) and the Core Machine Learning Platform.
-
+    
    - title: Director, Research and Data Science 
     company: Cloudera Fast Forward Labs
     company_url: ''
