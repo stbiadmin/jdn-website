@@ -6,7 +6,7 @@ title: Justin D. Norman
 superuser: true
 
 # Role/position/tagline
-role: PhD Student @ Berkeley | Computer Vision & ML/AI Consultant 
+role: PhD Student @ Berkeley | ML/AI Consultant 
 
 # Organizations/Affiliations to show in About widget
 organizations:
@@ -27,7 +27,7 @@ interests:
 # Education to show in About widget
 education:
   courses:
-  - course: PhD in Computer Vision | Computational Photography | Machine Learning
+  - course: PhD in Computer Vision | Machine Learning
     institution: UC Berkeley
     year: 2025 (expected)
   - course: MBA w/ concentration in Business Analytics
@@ -51,9 +51,6 @@ social:
 - icon: twitter
   icon_pack: fab
   link: https://twitter.com/justinjdn
-- icon: graduation-cap  # Alternatively, use `google-scholar` icon from `ai` icon pack
-  icon_pack: fas
-  link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
 - icon: github
   icon_pack: fab
   link: https://github.com/gcushen
@@ -75,8 +72,12 @@ email: ""
 highlight_name: true
 ---
 
-Nelson Bighetti is a professor of artificial intelligence at the Stanford AI Lab. His research interests include distributed robotics, mobile computing and programmable matter. He leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+Hey! I'm Justin Norman.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+I'm a second year PhD student at UC Berkeley, where I am advised by [Hany Farid](https://farid.berkeley.edu/). I am interested in research in computer vision, computational photography, machine learning and machine learning engineering. I am the recipient of the [Marcus Foster Fellowship](https://www.marcusfoster.org/marcus-foster-fellowship).
 
-{{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/demo_resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
+My last role in industry was VP, Data Science, Analytics and Data Products at Yelp. I was responsible for five functional Data Science teams as well as and the corporate Data Product Management team (Data and Analytics, Experimentation, Trust and Safety and Applied Machine Learning). I also led development of the DS/ML experimentation platform (Bunsen) and the Core Machine Learning Platform. Outside of the organic responsibilities of the role I also provide strategic leadership in Machine Learning, Data Science and Analytics to the Chief Product Officer, CEO and Executive Leadership Team.
+
+Previously, I was the Director of Research and Data Science at Cloudera Fast Forward Labs, Head of Applied Machine Learning at Fitbit, the Global Head of Cisco’s Enterprise Data Science Office and a Big Data Systems Engineer with Booz Allen Hamilton.  In another life, I served as a Marine Corps Officer, with a focus in Systems Analytics and Intelligence. I am a graduate of the US Naval Academy with a degree in Computer Science and the University of Southern California with a Master’s Degree in Business Administration and Business Analytics.
+
+
