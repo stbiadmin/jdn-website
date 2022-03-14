@@ -1,5 +1,5 @@
 ---
-title: "Determining the distinctiveness and reliability of machine-automated clothing pattern detection in digital imagery"
+title: "Evaluating distinctiveness and reliability in machine-automated clothing pattern detection applications for digital imagery"
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here 
