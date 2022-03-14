@@ -41,7 +41,7 @@ experience:
   - title: VP, Data Science, Analytics & Data Products
     company: Yelp
     company_url: ''
-    company_logo: yelp.png
+    company_logo: yelp
     location: California
     date_start: '2019-11-01'
     date_end: '2021-12-31'
