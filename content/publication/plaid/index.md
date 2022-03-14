@@ -1,5 +1,5 @@
 ---
-title: "Determining the distinctiveness and reliability of automated clothing pattern detection in digital imagery"
+title: "Determining the distinctiveness and reliability of machine-automated clothing pattern detection in digital imagery"
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here 
@@ -64,7 +64,7 @@ abstract:
   4. Comparing each forensic identification techniques against human analysts.
 
   Throughout, we will determine the distinctiveness and reliability of patterns used to identify an
-  individual, Table 1. These criteria will be used to determine the true positive rate (the probability
+  individual. These criteria will be used to determine the true positive rate (the probability
   that a correct match will be made) and the false positive rate (the probability that an incorrect
   match will be made). These error-rates, in particular, have been lacking in previous work, and are
   particularly important so that juries and judges can assess the reliability of a forensic identification.
