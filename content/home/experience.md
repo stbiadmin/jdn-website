@@ -25,7 +25,7 @@ experience:
   - title: CEO
     company: JDN & Associates, LLC
     company_url: ''
-    company_logo: JDN-logo-1
+    company_logo: JDN-logo
     location: California
     date_start: '2022-01-01'
     date_end: ''
