@@ -53,7 +53,7 @@ experience:
     company_logo: ffl
     location: California
     date_start: '2018-07-01'
-    date_end: '2019-11-31'
+    date_end: '2019-11-01'
     description:   Served as the head of machine learning research at Cloudera, supervising a diverse team of over 30, composed of research engineers, Data Science Managers, Front-end Designer/Developers, Technical Program Managers and ML engineers.
 
 
