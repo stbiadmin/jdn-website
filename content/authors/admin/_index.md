@@ -53,7 +53,7 @@ social:
   link: https://twitter.com/justinjdn
 - icon: github
   icon_pack: fab
-  link: https://github.com/gcushen
+  link: https://github.com/stbiadmin
 - icon: linkedin
   icon_pack: fab
   link: https://www.linkedin.com/in/justindnorman/
