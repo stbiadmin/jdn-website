@@ -78,6 +78,4 @@ I'm a second year PhD student at UC Berkeley, where I am advised by [Hany Farid]
 
 My last role in industry was VP, Data Science, Analytics and Data Products at Yelp. I was responsible for five functional Data Science teams as well as and the corporate Data Product Management team. I also led development of the DS/ML experimentation platform (Bunsen) and the Core Machine Learning Platform. 
 
-Previously, I was the Director of Research and Data Science at Cloudera Fast Forward Labs, Head of Applied Machine Learning at Fitbit, the Global Head of Cisco’s Enterprise Data Science Office and a Big Data Systems Engineer with Booz Allen Hamilton.  In another life, I served as a Marine Corps Officer, with a focus in Systems Analytics and Intelligence. I am a graduate of the US Naval Academy with a degree in Computer Science and the University of Southern California with a Master’s Degree in Business Administration and Business Analytics.
-
-
+Previously, I was the Director of Research and Data Science at Cloudera Fast Forward Labs, Head of Applied Machine Learning at Fitbit, the Global Head of Cisco’s Enterprise Data Science Office and a Big Data Systems Engineer with Booz Allen Hamilton.  In another life, I served as a Marine Corps Officer, with a focus in Systems Analytics and Intelligence. 
