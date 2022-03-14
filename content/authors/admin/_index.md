@@ -20,7 +20,7 @@ bio:
 interests:
 - Computer Vision
 - Machine Learning
-- MLOPS | Data Engineering
+- MLOps | Data Engineering
 - ML Systems Design
 
 

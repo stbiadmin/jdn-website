@@ -30,7 +30,7 @@ experience:
     date_start: '2022-01-01'
     date_end: ''
     description: |2-
-        Head of a Machine Learning Research and Data Systems Integration consultancy. Core competencies include
+        Head of a Machine Learning Research and Data Systems Integration consultancy. Core competencies include:
         
         * Computer Vision and Computational Photography
         * Machine Learning Research
