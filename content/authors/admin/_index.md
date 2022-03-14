@@ -6,7 +6,7 @@ title: Justin D. Norman
 superuser: true
 
 # Role/position/tagline
-role: PhD Student @ Berkeley | ML/AI Consultant 
+role: PhD Student | ML/AI Consultant 
 
 # Organizations/Affiliations to show in About widget
 organizations:
