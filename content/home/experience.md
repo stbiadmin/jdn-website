@@ -59,7 +59,7 @@ experience:
   - title: Head of Applied Machine Learning
     company: Fitbit
     company_url: ''
-    company_logo: Fitbit_logo
+    company_logo: Fitbit_logo_1
     location: California
     date_start: '2018-01-01'
     date_end: '2019-07-01'
