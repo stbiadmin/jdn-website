@@ -56,6 +56,24 @@ experience:
     date_end: '2019-11-01'
     description:   Served as the head of machine learning research at Cloudera, supervising a diverse team of over 30, composed of research engineers, Data Science Managers, Front-end Designer/Developers, Technical Program Managers and ML engineers.
 
+  - title: Head of Applied Machine Learning
+    company: Fitbit
+    company_url: ''
+    company_logo: Fitbit_logo
+    location: California
+    date_start: '2018-01-01'
+    date_end: '2019-07-01'
+    description:   Led a team of data scientists and machine learning engineers in the development of algorithmic applications for fitness and health monitoring.
+
+  - title: Senior Manager, Enterprise Data Science
+    company: Cloudera Fast Forward Labs
+    company_url: ''
+    company_logo: Cisco_logo
+    location: California
+    date_start: '2012-04-01'
+    date_end: '2019-12-31'
+    description:   As the Chief Data Scientist and Data Science Team lead at the Cisco Enterprise Data Science office, responsible for model selection, development, training and validation of analytical products.
+
 
 design:
   columns: '2'
