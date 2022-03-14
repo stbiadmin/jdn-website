@@ -1,6 +1,5 @@
 ---
-title: "Determine the distinctiveness and reliability of patterns used to identify an
-individual"
+title: "Determining the distinctiveness and reliability of automated clothing pattern detection in digital imagery"
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here 
