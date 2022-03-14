@@ -26,7 +26,7 @@ publishDate: "2017-01-01T00:00:00Z"
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Patent
-publication_types: ["3"]
+publication_types: ["0"]
 
 # Publication name and optional abbreviated publication name.
 publication: 
@@ -42,7 +42,7 @@ abstract: I propose a project that improves upon the principles demonstrated in 
   ground-truth
 
   3. Training a neural network which takes two images- a low-quality image and a 2nd (real-world) image and outputs a yes/no answer to the question “do these two images contain the same person?”
-  
+
   4. Assessing the performance of this end-to-end system and the feasibility of reliable and ethical non-expert employment 
 
 
