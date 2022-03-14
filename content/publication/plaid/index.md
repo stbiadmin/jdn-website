@@ -32,41 +32,43 @@ publication_types: ["4"]
 publication: 
 publication_short: (In Progress)
 
-abstract: In 2003, Wilbert McKreith, was charged with a string of bank robberies
-across South Florida. During his trial, jurors were presented with circumstantial
-evidence against McKreith. During
+abstract: 
 
-An FBI examiner then testified that the button-down plaid shirt
-found in McKreith’s home was the exact shirt worn by the masked robber
-depicted in surveillance video. The examiner did so by matching the
-misalignment in the plaid pattern along the shirt seams, Figure 1. When
-asked by the prosecutor as to the odds that two different shirts would
-exhibit this same match, the FBI examiner responded “1 in 650 billion,
-give or take a few billion.”
+  In 2003, Wilbert McKreith, was charged with a string of bank robberies
+  across South Florida. During his trial, jurors were presented with circumstantial
+  evidence against McKreith. During
 
-The jury convicted McKrieth, who is serving a 92-year prison sentence.
-The only evidence that directly linked him to the crime was the
-FBI examiner’s plaid shirt analysis.
+  An FBI examiner then testified that the button-down plaid shirt
+  found in McKreith’s home was the exact shirt worn by the masked robber
+  depicted in surveillance video. The examiner did so by matching the
+  misalignment in the plaid pattern along the shirt seams, Figure 1. When
+  asked by the prosecutor as to the odds that two different shirts would
+  exhibit this same match, the FBI examiner responded “1 in 650 billion,
+  give or take a few billion.”
 
-We propose to improve the state of photographic forensic identification. These efforts will
-include - 
+  The jury convicted McKrieth, who is serving a 92-year prison sentence.
+  The only evidence that directly linked him to the crime was the
+  FBI examiner’s plaid shirt analysis.
 
-1. Determining the reliability of 2-D photographic identification techniques based on the wear
-on the seams of denim jeans, regularly-patterned clothing (e.g., plaid, polka dots), and
-irregularly-patterned clothing (e.g., camouflage).
+  We propose to improve the state of photographic forensic identification. These efforts will
+  include - 
 
-2. Developing new 2-D photographic identification techniques that, as much as possible, removes human subjectivity from the process.
+  1. Determining the reliability of 2-D photographic identification techniques based on the wear
+  on the seams of denim jeans, regularly-patterned clothing (e.g., plaid, polka dots), and
+  irregularly-patterned clothing (e.g., camouflage).
 
-3. Employing 3-D human-body modeling to improve the accuracy of clothing-based forensic
-identification, as well as general identification based on a person’s height and weight.
+  2. Developing new 2-D photographic identification techniques that, as much as possible, removes human subjectivity from the process.
 
-4. Comparing each forensic identification techniques against human analysts.
+  3. Employing 3-D human-body modeling to improve the accuracy of clothing-based forensic
+  identification, as well as general identification based on a person’s height and weight.
 
-Throughout, we will determine the distinctiveness and reliability of patterns used to identify an
-individual, Table 1. These criteria will be used to determine the true positive rate (the probability
-that a correct match will be made) and the false positive rate (the probability that an incorrect
-match will be made). These error-rates, in particular, have been lacking in previous work, and are
-particularly important so that juries and judges can assess the reliability of a forensic identification.
+  4. Comparing each forensic identification techniques against human analysts.
+
+  Throughout, we will determine the distinctiveness and reliability of patterns used to identify an
+  individual, Table 1. These criteria will be used to determine the true positive rate (the probability
+  that a correct match will be made) and the false positive rate (the probability that an incorrect
+  match will be made). These error-rates, in particular, have been lacking in previous work, and are
+  particularly important so that juries and judges can assess the reliability of a forensic identification.
 
 
 # Summary. An optional shortened abstract.
