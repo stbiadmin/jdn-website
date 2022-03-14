@@ -25,11 +25,11 @@ publishDate: "2017-01-01T00:00:00Z"
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Patent
-publication_types: ["0"]
+publication_types: ["3"]
 
 # Publication name and optional abbreviated publication name.
 publication: 
-publication_short: *Preprint / Working Paper*
+publication_short: * Preprint / Working Paper*
 
 abstract: We describe a technique for measuring image similarity in biomedical imagery (in particular, western blots.  We also describe a large-scale comparison of image similarity across authentic images and synthetically duplicated and in-the-wild duplicated images we provide a systematic, quantitative approach for assessing claims of scientific misconduct in digital imagery
 
