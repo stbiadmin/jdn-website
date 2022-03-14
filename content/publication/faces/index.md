@@ -1,5 +1,5 @@
 ---
-title: "Assessing the reliability and feasibility of DNN-enabled photoforensic reidentification from downsampled images"
+title: "Assessing the feasibility of DNN-enabled photoforensic reidentification from downsampled images"
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here 
@@ -30,16 +30,19 @@ publication_types: ["3"]
 
 # Publication name and optional abbreviated publication name.
 publication: 
-publication_short: In Progress
+publication_short: (In Progress)
 
 abstract: I propose a project that improves upon the principles demonstrated in both H.Farid et al. Forensic Reconstruction of Severely Degraded License Plates and Menon, Damian, Ruden et al PULSE Self-Supervised Photo Upsampling via Latent Space Exploration of Generative Models in order to asesss the reliability of forensic tools which seek to confirm the identify of a person from two separate images one downsampled, distorted and noisy and the other a high-resolution sample.
 
   I propose to improve upon these approaches by - 
 
   1. Developing a large synthetic training set using StyleGAN generated faces of people who do not exist
+
   2. Randomly applying various degradations to the synthetic images for training, while also preserving the high-quality images for
   ground-truth
+
   3. Training a neural network which takes two images- a low-quality image and a 2nd (real-world) image and outputs a yes/no answer to the question “do these two images contain the same person?”
+  
   4. Assessing the performance of this end-to-end system and the feasibility of reliable and ethical non-expert employment 
 
 
