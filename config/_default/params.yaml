@@ -7,7 +7,7 @@
 
 appearance:
   theme_day: forest
-  theme_night: earth
+  theme_night: dark
   font: cyberpunk
   font_size: M
 
