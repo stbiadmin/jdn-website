@@ -27,7 +27,7 @@ experience:
     company_url: ''
     company_logo: JDN-logo
     location: California
-    date_start: '2021-01-01'
+    date_start: '2022-01-01'
     date_end: ''
     description: |2-
         Head of a Machine Learning Research and Data Systems Integration consultancy. Core competencies include
@@ -43,18 +43,19 @@ experience:
     company_url: ''
     company_logo: yelp
     location: California
-    date_start: '2019-11-01'
+    date_start: '2019-11-31'
     date_end: '2021-12-31'
     description:  As the head of Data Science and Data Product at Yelp, was responsible for five functional Data Science teams and the corporate Data Product Management team, as well as the Yelp DS/ML experimentation platform (Bunsen) and the Core Machine Learning Platform.
-    
-   - title: Director, Research and Data Science 
+
+  - title: Director, Research and Data Science 
     company: Cloudera Fast Forward Labs
     company_url: ''
     company_logo: ffl
     location: California
-    date_start: '2019-11-01'
-    date_end: '2021-12-31'
-    description:   Served as the head of machine learning research at Cloudera, supervising a diverse team of over 30, composed of research engineers, Data Science Managers, Front-end Designer/Developers, Technical Program Managers and ML engineers
+    date_start: '2018-07-01'
+    date_end: '2019-11-31'
+    description:   Served as the head of machine learning research at Cloudera, supervising a diverse team of over 30, composed of research engineers, Data Science Managers, Front-end Designer/Developers, Technical Program Managers and ML engineers.
+
 
 design:
   columns: '2'
