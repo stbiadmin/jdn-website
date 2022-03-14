@@ -1,7 +1,10 @@
 ---
+draft: true
+---
+
 # An instance of the Featurette widget.
 # Documentation: https://wowchemy.com/docs/page-builder/
-draft: true
+
 
 widget: featurette
 
