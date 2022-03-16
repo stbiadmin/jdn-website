@@ -66,7 +66,7 @@ experience:
     description:   Led a team of data scientists and machine learning engineers in the development of algorithmic applications for fitness and health monitoring.
 
   - title: Senior Manager, Enterprise Data Science
-    company: Cloudera Fast Forward Labs
+    company: Cisco
     company_url: ''
     company_logo: Cisco_logo
     location: California
