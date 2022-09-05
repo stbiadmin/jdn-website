@@ -49,7 +49,7 @@ From there, I will enumerate any technical limitations discovered. I will then b
 to suggest appropriate alternative technical approaches, such as CNN Fine-tuning. Finally, I will demonstrate the
 efficacy, reliability and practical costs of these alternatives by developing and systematically testing an improved
 end-to-end machine-learning-enabled forensic technique which seeks to confirm the identity of a person from at
-least two separate images:one downsampled, distorted and noisy and the other a high-resolution control sample.
+least two separate images, one downsampled, distorted and noisy and the other a high-resolution control sample.
 
   I propose to improve upon previous approaches by - 
 
@@ -60,6 +60,7 @@ least two separate images:one downsampled, distorted and noisy and the other a h
   3. Developing a neural network architecture which takes as an input a high quality image from a single source identity, identifies the most mathematically similar images in the dataset to that image, then compares a progressively degraded second image from the source identity to all of the n most similar images and outputs a yes/no answer to the question "which of these images contain the source identity?"
 
   4. Assessing the performance of this end-to-end system and the feasibility of reliable and ethical non-expert employment 
+
 
 
 # Summary. An optional shortened abstract.
