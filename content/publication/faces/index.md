@@ -32,8 +32,7 @@ publication_types: ["0"]
 publication: 
 publication_short: (In Progress)
 
-abstract: Law enforcement agencies, corporations and non-Governmental organizations alike have begun to adopt Convolutional
-Neural Network (CNN)-based approaches to confirming individual identities via facial recognition for a
+abstract: Law enforcement agencies, corporations and non-Governmental organizations alike have begun to adopt ConvolutionalNeural Network (CNN)-based approaches to confirming individual identities via facial recognition for a
 variety of applications. However, the current state-of-the-art (SoTA) has been shown to be highly unreliable when
 comparing images of inconsistent quality, as is typical in real-world applications. Though the demand for such
 technology is strong, the current practical outcomes of its use, given these limitations, have also been quite harmful
