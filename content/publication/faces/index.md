@@ -32,16 +32,33 @@ publication_types: ["0"]
 publication: 
 publication_short: (In Progress)
 
-abstract: I propose a project that improves upon the principles demonstrated in both H.Farid et al. Forensic Reconstruction of Severely Degraded License Plates and Menon, Damian, Ruden et al PULSE Self-Supervised Photo Upsampling via Latent Space Exploration of Generative Models in order to asesss the reliability of forensic tools which seek to confirm the identify of a person from two separate images one downsampled, distorted and noisy and the other a high-resolution sample.
+abstract: 
+Law enforcement agencies, corporations and non-Governmental organizations alike have begun to adopt Convolutional
+Neural Network (CNN)-based approaches to confirming individual identities via facial recognition for a
+variety of applications. However, the current state-of-the-art (SoTA) has been shown to be highly unreliable when
+comparing images of inconsistent quality, as is typical in real-world applications. Though the demand for such
+technology is strong, the current practical outcomes of its use, given these limitations, have also been quite harmful
+for both the public and institutions involved. At worst, individuals are improperly implicated in crimes, financial
+and identity fraud goes undetected and humanitarian aid is poorly distributed.
 
-  I propose to improve upon these approaches by - 
+I propose a research project that improves upon the principles demonstrated in H.Farid et al. Forensic Reconstruction
+of Severely Degraded License Plates in order to both properly assess, and also develop mitigations for,
+many of the technical limitations present in the current state of forensic re-identification from digital images of
+faces. The research progression will be to first assess the SoTA of photoforensic identification under real-world conditions.
 
-  1. Developing a large synthetic training set using StyleGAN generated faces of people who do not exist
+From there, I will enumerate any technical limitations discovered. I will then build upon existing research
+to suggest appropriate alternative technical approaches, such as CNN Fine-tuning. Finally, I will demonstrate the
+efficacy, reliability and practical costs of these alternatives by developing and systematically testing an improved
+end-to-end machine-learning-enabled forensic technique which seeks to confirm the identity of a person from at
+least two separate images:one downsampled, distorted and noisy and the other a high-resolution control sample.
 
-  2. Randomly applying various degradations to the synthetic images for training, while also preserving the high-quality images for
-  ground-truth
+  I propose to improve upon previous approaches by - 
 
-  3. Training a neural network which takes two images- a low-quality image and a 2nd (real-world) image and outputs a yes/no answer to the question “do these two images contain the same person?”
+  1. Curating a large dataset consisting of both fully synthetic and augmented real-world images
+
+  2. Randomly applying various degradations to the synthetic images for training, while also preserving the high-quality images for ground-truth
+
+  3. Developing a neural network architecture which takes as an input a high quality image from a single source identity, identifies the most mathematically similar images in the dataset to that image, then compares a progressively degraded second image from the source identity to all of the n most similar images and outputs a yes/no answer to the question "which of these images contain the source identity?"
 
   4. Assessing the performance of this end-to-end system and the feasibility of reliable and ethical non-expert employment 
 
