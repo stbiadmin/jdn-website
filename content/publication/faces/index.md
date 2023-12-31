@@ -1,5 +1,5 @@
 ---
-title: "Assessing the feasibility of DNN-enabled photoforensic reidentification from downsampled images"
+title: "An Evaluation of Forensic Facial Recognition"
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here 
@@ -16,33 +16,23 @@ author_notes:
 - "Equal contribution"
 - ""
 
-date: "2022-05-01T00:00:00Z"
-doi: ""
+date: "2023-10-10T00:00:00Z"
+doi: "https://doi.org/10.48550/arXiv.2311.06145"
 
 # Schedule page publish date (NOT publication's date).
-publishDate: "2017-01-01T00:00:00Z"
+publishDate: "2023-10-10T00:00:00Z"
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Patent
-publication_types: ["0"]
+publication_types: ["3"]
 
 # Publication name and optional abbreviated publication name.
 publication: 
-publication_short: (In Progress)
+publication_short: (Pre-Print)
 
-abstract: Law enforcement agencies, corporations and non-Governmental organizations alike have begun to adopt ConvolutionalNeural Network (CNN)-based approaches to confirming individual identities via facial recognition for a variety of applications. However, the current state-of-the-art (SoTA) has been shown to be highly unreliable when comparing images of inconsistent quality, as is typical in real-world applications. Though the demand for such technology is strong, the current practical outcomes of its use, given these limitations, have also been quite harmful for both the public and institutions involved. At worst, individuals are improperly implicated in crimes, financial and identity fraud goes undetected and humanitarian aid is poorly distributed. 
-
-  I propose to improve upon previous approaches by - 
-
-    1. Curating a large dataset consisting of both fully synthetic and augmented real-world images
-
-    2. Randomly applying various degradations to the synthetic images for training, while also preserving the high-quality images for ground-truth
-
-    3. Developing a neural network architecture which takes as an input a high quality image from a single source identity, identifies the most mathematically similar images in the dataset to that image, then compares a progressively degraded second image from the source identity to all of the n most similar images and outputs a yes/no answer to the question "which of these images contain the source identity?"
-
-    4. Assessing the performance of this end-to-end system and the feasibility of reliable and ethical non-expert employment 
+abstract: Recent advances in machine learning and computer vision have led to reported facial recognition accuracies surpassing human performance. We question if these systems will translate to real-world forensic scenarios in which a potentially low-resolution, low-quality, partially-occluded image is compared against a standard facial database. We describe the construction of a large-scale synthetic facial dataset along with a controlled facial forensic lineup, the combination of which allows for a controlled evaluation of facial recognition under a range of real-world conditions. Using this synthetic dataset, and a popular dataset of real faces, we evaluate the accuracy of two popular neural-based recognition systems. We find that previously reported face recognition accuracies of more than 95% drop to as low as 65% in this more challenging forensic scenario.
 
 # Summary. An optional shortened abstract.
 summary: 
@@ -54,8 +44,8 @@ featured: true
 
 # Custom links (uncomment lines below)
 # links:
-# - name: Custom Link
-#   url: http://example.org
+- name: Arxiv Link
+   url: https://arxiv.org/abs/2311.06145
 
 url_pdf: ''
 url_code: ''
