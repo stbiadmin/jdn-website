@@ -29,7 +29,7 @@ education:
   courses:
   - course: PhD in Computer Vision | Machine Learning
     institution: UC Berkeley
-    year: 2025 (expected)
+    year: 2024 (expected)
   - course: MBA w/ concentration in Business Analytics
     institution: University of Southern California 
     year: 2015
@@ -74,7 +74,7 @@ highlight_name: true
 
 Hey! I'm Justin Norman.
 
-I'm a third year PhD student at UC Berkeley, where I am advised by [Hany Farid](https://farid.berkeley.edu/). I am interested in research in computer vision, computational photography, generative AI and machine learning engineering. I am a recipient of the [Marcus Foster Fellowship](https://www.marcusfoster.org/marcus-foster-fellowship).
+I'm a fourth year PhD candidate at UC Berkeley, where I am advised by [Hany Farid](https://farid.berkeley.edu/). I am interested in research in computer vision, computational photography, generative AI and machine learning engineering. I am a recipient of the [Marcus Foster Fellowship](https://www.marcusfoster.org/marcus-foster-fellowship).
 
 My PhD projects to this point have centered around evaluating and improving the robustness of traditional and generative computer vision systems, in applied AI use cases.
 
