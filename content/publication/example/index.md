@@ -1,13 +1,11 @@
 ---
-title: "On the reliability of crowd-sourced investigations
-of scientific misconduct in biomedical imagery"
+title: "An Investigation into the Impact of AI-Powered Image Enhancement on Forensic Facial Recognition"
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here 
 # and it will be replaced with their full name and linked to their profile.
 authors:
 - admin
-- Mike Rosner 
 - Hany Farid
 
 
@@ -17,8 +15,8 @@ author_notes:
 - ""
 - "Equal contribution"
 
-date: "2022-05-01T00:00:00Z"
-doi: ""
+date: "2024-06-01T00:00:00Z"
+doi: "https://doi.org/10.26483/ijarcs.v15i4.7108"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: "2017-01-01T00:00:00Z"
@@ -30,10 +28,10 @@ publishDate: "2017-01-01T00:00:00Z"
 publication_types: ["3"]
 
 # Publication name and optional abbreviated publication name.
-publication: 
-publication_short: (Pre-print)
+publication: Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops
+publication_short: (CVPR Conference Paper)
 
-abstract: We describe a technique for measuring image similarity in biomedical imagery (in particular, western blots.  We also describe a large-scale comparison of image similarity across authentic images and synthetically duplicated and in-the-wild duplicated images we provide a systematic, quantitative approach for assessing claims of scientific misconduct in digital imagery
+abstract: Advances in machine learning and computer vision have led to significant improvements in automated facial recognition. Many real-world forensic settings however are confronted with challenging low-quality and low-resolution images that often confound even state-of-the art facial recognition. We investigate if and when advances in neural-based image enhancement and restoration can be used to restore degraded images while preserving facial identity for use in forensic facial recognition.
 
 # Summary. An optional shortened abstract.
 summary: 

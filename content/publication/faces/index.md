@@ -16,7 +16,7 @@ author_notes:
 - "Equal contribution"
 - ""
 
-date: "2023-10-10T00:00:00Z"
+date: "2023-10-11T00:00:00Z"
 doi: "https://doi.org/10.48550/arXiv.2311.06145"
 
 # Schedule page publish date (NOT publication's date).
@@ -30,7 +30,7 @@ publication_types: ["3"]
 
 # Publication name and optional abbreviated publication name.
 publication: 
-publication_short: (Pre-Print)
+publication_short: (ArXiv Pre-Print)
 
 abstract: Recent advances in machine learning and computer vision have led to reported facial recognition accuracies surpassing human performance. We question if these systems will translate to real-world forensic scenarios in which a potentially low-resolution, low-quality, partially-occluded image is compared against a standard facial database. We describe the construction of a large-scale synthetic facial dataset along with a controlled facial forensic lineup, the combination of which allows for a controlled evaluation of facial recognition under a range of real-world conditions. Using this synthetic dataset, and a popular dataset of real faces, we evaluate the accuracy of two popular neural-based recognition systems. We find that previously reported face recognition accuracies of more than 95% drop to as low as 65% in this more challenging forensic scenario.
 
