@@ -22,6 +22,20 @@ date_format: Jan 2006
 #   Leave `date_end` empty if it's your current employer.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
+- title: CEO
+    company: Vera AI
+    company_url: ''
+    company_logo: Vera_logo
+    location: California
+    date_start: '2022-06-01'
+    date_end: ''
+    description: |2-
+        CTO / Head of AI:
+        
+        As CTO, responsible for the entire Vera engineering team, technical consultants and design partners as well as the technical execution of the Vera product roadmap
+
+        As Head of AI, responsible for AI Research (LLM and Computer vision model training and eval) and ML Engineering
+
   - title: CEO
     company: JDN & Associates, LLC
     company_url: ''
@@ -30,13 +44,14 @@ experience:
     date_start: '2022-01-01'
     date_end: ''
     description: |2-
-        Head of a Machine Learning Research and Data Systems Integration consultancy. Core competencies include:
+        Head of a Machine Learning/AI Research and Data Systems Integration consultancy. Core competencies include:
         
+        * Deepfake Detection
+        * LLM Hallucination Detection and Mitigation
+        * ML/AI Research
+        * ML/AI System Design and Deployment
         * Computer Vision and Computational Photography
-        * Machine Learning Research
-        * Machine Learning System Design and Deployment
         * Large-Scale Data Systems Design
-        * Enterprise Software Procurement and Integration
         
   - title: VP, Data Science, Analytics & Data Products
     company: Yelp
