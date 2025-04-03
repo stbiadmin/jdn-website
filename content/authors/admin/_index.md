@@ -6,7 +6,7 @@ title: Justin D. Norman
 superuser: true
 
 # Role/position/tagline
-role: PhD Student | ML/AI Consultant 
+role: PhD Candidate | ML/AI Leader 
 
 # Organizations/Affiliations to show in About widget
 organizations:
@@ -19,6 +19,7 @@ bio:
 # Interests to show in About widget
 interests:
 - Computer Vision
+- ML/AI
 - Machine Learning
 - MLOps | Data Engineering
 - ML Systems Design
@@ -29,7 +30,7 @@ education:
   courses:
   - course: PhD in Computer Vision | Machine Learning
     institution: UC Berkeley
-    year: 2024 (expected)
+    year: 2025 (expected)
   - course: MBA w/ concentration in Business Analytics
     institution: University of Southern California 
     year: 2015
@@ -48,9 +49,9 @@ social:
 - icon: envelope
   icon_pack: fas
   link: '/#contact'
-- icon: twitter
+- icon: bluesky
   icon_pack: fab
-  link: https://twitter.com/justinjdn
+  link: https://bsky.app/profile/justinjdn.bsky.social
 - icon: github
   icon_pack: fab
   link: https://github.com/stbiadmin
