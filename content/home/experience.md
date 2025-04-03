@@ -22,7 +22,7 @@ date_format: Jan 2006
 #   Leave `date_end` empty if it's your current employer.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
-- title: CTO / Head of AI
+  - title: CTO / Head of AI
     company: Vera AI
     company_url: 'askvera.io'
     company_logo: Vera_logo
