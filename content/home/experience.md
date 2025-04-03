@@ -31,7 +31,7 @@ experience:
     date_end: ''
     description: |2-
                 
-        As CTO, responsible for the entire Vera engineering team, technical consultants and design partners as well as the technical execution of the Vera product roadmap
+        As CTO, responsible for the entire Vera engineering team, technical consultants and design partners as well as the technical execution of the Vera  product roadmap
 
         As Head of AI, responsible for AI Research (LLM and Computer vision model training and eval) and ML Engineering
 
