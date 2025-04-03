@@ -25,7 +25,7 @@ experience:
   - title: CTO / Head of AI
     company: Vera AI
     company_url: 'askvera.io'
-    company_logo: Vera_logo.png
+    company_logo: Vera_logo
     location: California
     date_start: '2022-06-01'
     date_end: ''
