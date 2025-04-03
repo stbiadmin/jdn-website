@@ -49,7 +49,7 @@ social:
 - icon: envelope
   icon_pack: fas
   link: '/#contact'
-- icon: bluesky
+- icon: twitter
   icon_pack: fab
   link: https://bsky.app/profile/justinjdn.bsky.social
 - icon: github
