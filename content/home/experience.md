@@ -22,16 +22,15 @@ date_format: Jan 2006
 #   Leave `date_end` empty if it's your current employer.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
-- title: CEO
+- title: CTO / Head of AI
     company: Vera AI
-    company_url: ''
+    company_url: 'askvera.io'
     company_logo: Vera_logo
     location: California
     date_start: '2022-06-01'
     date_end: ''
     description: |2-
-        CTO / Head of AI:
-        
+                
         As CTO, responsible for the entire Vera engineering team, technical consultants and design partners as well as the technical execution of the Vera product roadmap
 
         As Head of AI, responsible for AI Research (LLM and Computer vision model training and eval) and ML Engineering
