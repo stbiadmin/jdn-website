@@ -60,7 +60,7 @@ url_video: ''
 # To use, add an image named `featured.jpg/png` to your page's folder. 
 image:
   caption: ''
-  focal_point: ""
+  focal_point: "Image credit: [**iStock**](https://media.istockphoto.com/id/1040557296/vector/big-data-and-artificial-intelligence-concept.jpg?s=612x612&w=0&k=20&c=mIbAAMh5twsK-vB7jpMV_rH4iickaekmvoF5Uaffj10=)"
   preview_only: false
 
 # Associated Projects (optional).

@@ -46,8 +46,8 @@ featured: true
 
 # Custom links (uncomment lines below)
 # links:
-#name: Arxiv Link
-#url: 'https://arxiv.org/abs/2311.06145'
+name: Arxiv Link
+url: 'https://arxiv.org/abs/2311.06145'
 
 url_pdf: ''
 url_code: ''
@@ -61,7 +61,7 @@ url_video: ''
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 
 image:
-  caption: 'Image credit: [**theverge.com**](https://cdn.vox-cdn.com/thumbor/K8ICW_XV6RI6EioRxKRiBBQPFek=/55x85:768x536/1200x800/filters:focal(336x236:464x364)/cdn.vox-cdn.com/uploads/chorus_image/image/66972412/face_depixelizer_obama.0.jpg)'
+  caption: 'Image credit: [**Justin D. Norman**](https://arxiv.org/abs/2311.06145)'
   focal_point: ""
   preview_only: false
 
