@@ -61,7 +61,7 @@ url_video: ''
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 
 image:
-  caption: 'Image credit: [**Justin D. Norman**](https://arxiv.org/abs/2311.06145)'
+  caption: 'Image credit: [**Justin D. Norman**]'
   focal_point: ""
   preview_only: false
 
