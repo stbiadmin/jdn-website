@@ -17,7 +17,7 @@ author_notes:
 - ""
 
 date: "2023-10-11T00:00:00Z"
-doi: "https://doi.org/10.48550/arXiv.2311.06145"
+doi: "10.48550/arXiv.2311.06145"
 
 
 

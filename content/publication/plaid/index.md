@@ -16,7 +16,7 @@ author_notes:
 
 
 date: "2024-06-05T00:00:00Z"
-doi: "doi.org/10.1145/3630106.365900"
+doi: "10.1145/3630106.365900"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: "2017-01-01T00:00:00Z"
