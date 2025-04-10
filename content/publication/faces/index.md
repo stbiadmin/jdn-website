@@ -47,7 +47,7 @@ featured: true
 # Custom links (uncomment lines below)
 # links:
 name: Arxiv Link
-url: 'https://arxiv.org/abs/2311.06145'
+url: 'arxiv.org/abs/2311.06145'
 
 url_pdf: ''
 url_code: ''
