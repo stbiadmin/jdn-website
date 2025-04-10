@@ -75,8 +75,8 @@ highlight_name: true
 
 Hey! I'm Justin Norman.
 
-I'm a fifth year PhD candidate at UC Berkeley, where I am advised by [Hany Farid](https://farid.berkeley.edu/). My research interests include computer vision,  generative AI (LLMs and VLMs) and machine learning engineering. I am a recipient of the [Marcus Foster Fellowship](https://bse.berkeley.edu/fellowship-established-honor-dr-marcus-foster).
+I'm a fifth year PhD candidate at UC Berkeley, where I am advised by [Hany Farid](https://farid.berkeley.edu/). My research interests include computer vision,  generative AI (LLMs and VLMs) and machine learning engineering. I am a recipient of the [Marcus Foster Fellowship](https://bse.berkeley.edu/fellowship-established-honor-dr-marcus-foster) and the [FASPE Design & Technology Fellowship](https://www.faspe-ethics.org/design-technology/).
 
-My PhD projects are focused on deepfake detection, improving the robustness of generative computer vision systems and LLM hallucination detection, mitigation and prevention.
+My PhD projects are focused on deepfake detection, content authenticity, improving the robustness of generative computer vision systems, and LLM hallucination detection, mitigation and prevention.
 
 My latest role in industry is CTO and Head of AI at Vera AI.  Previously I served as VP, Data Science, Analytics and Data Products at Yelp. Before that, I was the Director of Research and ML/AI at Cloudera Fast Forward Labs, Head of Applied Machine Learning at Fitbit, the Global Head of Cisco’s Enterprise Data Science Office and a Big Data Systems Engineer with Booz Allen Hamilton.  In another life, I served as a Marine Corps Officer, with a focus in Systems Analytics and Intelligence. 
