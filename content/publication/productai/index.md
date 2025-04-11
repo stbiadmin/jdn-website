@@ -46,12 +46,11 @@ featured: true
 # - name: Custom Link
 #   url: http://example.org
 
-url_book: 'www.oreilly.com/library/view/product-management-for/9781098104207/'
 url_pdf: ''
 url_code: ''
 url_dataset: ''
 url_poster: ''
-url_project: ''
+url_project: 'https://www.oreilly.com/library/view/product-management-for/9781098104207/'
 url_slides: ''
 url_source: ''
 url_video: ''
