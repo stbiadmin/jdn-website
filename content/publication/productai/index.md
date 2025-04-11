@@ -31,13 +31,8 @@ publication_types: ["5"]
 publication: 
 publication_short: (O'Reilly Media, Inc.)
 
-abstract: The increasing push to develop products that integrate AI puts the intersection of AI and product management into sharp focus. AI brings many challenges to traditional product management, including nondeterministic outcomes and the potential for bias against particular groups. These problems aren't insurmountable, but they're real, and they cause many projects to fail before they're deployed.
-
-In this report, authors Justin Norman, Pete Skomoroch, and Mike Loukides present four in-depth essays to help business leaders, AI specialists, and data scientists examine what makes AI different. Once you're familiar with the issues, you'll be better prepared to anticipate and solve the problems you face as you develop an AI project and shepherd it into production.
-
-Originally published in O'Reilly Radar, each of these essays provides helpful supporting examples.
+abstract: The increasing push to develop products that integrate AI puts the intersection of AI and product management into sharp focus. AI brings many challenges to traditional product management, including nondeterministic outcomes and the potential for bias against particular groups. These problems aren't insurmountable, but they're real, and they cause many projects to fail before they're deployed. In this report, authors Justin Norman, Pete Skomoroch, and Mike Loukides present four in-depth essays to help business leaders, AI specialists, and data scientists examine what makes AI different. Once you're familiar with the issues, you'll be better prepared to anticipate and solve the problems you face as you develop an AI project and shepherd it into production. Originally published in O'Reilly Radar, each of these essays provides helpful supporting examples.
   
-
 # Summary. An optional shortened abstract.
 summary: 
 
