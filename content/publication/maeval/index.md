@@ -7,14 +7,14 @@ title: "Language models should be subject to repeatable,open, domain-contextuali
 authors:
 - admin
 - Alex Hughes
-- Machael U. Rivera
+- Michael U. Rivera
 
 
 # Author notes (optional)
 author_notes:
 - "Equal contribution"
 - "Equal contribution"
-- ""
+- "Equal contribution"
 
 date: "2025-05-22T00:00:00Z"
 doi: "10.48550/arXiv.2505.17345"
