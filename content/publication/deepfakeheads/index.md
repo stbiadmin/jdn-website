@@ -8,15 +8,12 @@ authors:
 - admin
 - Hany Farid
 
-
 # Author notes (optional)
 author_notes:
-
+- "Equal contribution"
 
 date: "2025-07-11T00:00:00Z"
 doi: "10.48550/arXiv.2507.08917" 
-
-
 
 
 # Schedule page publish date (NOT publication's date).
