@@ -26,8 +26,8 @@ publishDate: "2025-12-02T00:00:00Z"
 publication_types: ["3"]
 
 # Publication name and optional abbreviated publication name.
-publication:
-publication_short: (ArXiv Pre-Print)
+publication: ""
+publication_short: "(ArXiv Pre-Print)"
 
 abstract: Biometric facial recognition models often demonstrate significant decreases in accuracy when processing real-world images, often characterized by poor quality, non-frontal subject poses, and subject occlusions. We investigate whether targeted, AI-driven, head-pose correction and image restoration can improve recognition accuracy. Using a model-agnostic, large-scale, forensic-evaluation pipeline, we assess the impact of three restoration approaches: 3D reconstruction (NextFace), 2D frontalization (CFR-GAN), and feature enhancement (CodeFormer). We find that naive application of these techniques substantially degrades facial recognition accuracy. However, we also find that selective application of CFR-GAN combined with CodeFormer yields meaningful improvements.
 
