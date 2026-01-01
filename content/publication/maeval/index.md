@@ -31,7 +31,7 @@ publication_types: ["1"]
 
 # Publication name and optional abbreviated publication name.
 publication: "International Conference on Information and Communication Technology (ICICT)"
-publication_short: ICICT 2026
+publication_short: (ICICT 2026)
 
 abstract: Plausible, but inaccurate, tokens in model-generated text are widely believed to be pervasive and problematic for the responsible adoption of language models. Despite this concern, there is little scientific work that attempts to measure the prevalence of language model hallucination in a comprehensive way. In this paper, we argue that language models should be evaluated using repeatable, open, and domain-contextualized hallucination benchmarking. We present a taxonomy of hallucinations alongside a case study that demonstrates that when experts are absent from the early stages of data creation, the resulting hallucination metrics lack validity and practical utility.
 
