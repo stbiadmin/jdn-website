@@ -40,9 +40,9 @@ tags: []
 featured: true
 
 # Custom links (uncomment lines below)
-# links:
-#name: Arxiv Link
-#url: 'arxiv.org/abs/2505.17345'
+links:
+- name: Webpage
+  url: 'https://stbiadmin.github.io/ghostfaces-website/'
 
 url_pdf: 'https://arxiv.org/pdf/2507.08917'
 url_code: ''
