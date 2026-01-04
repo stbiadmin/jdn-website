@@ -1,7 +1,7 @@
 ---
 # An instance of the Portfolio widget.
 # Documentation: https://wowchemy.com/docs/page-builder/
-active: false
+active: true
 widget: portfolio
 
 # This file represents a page section.
