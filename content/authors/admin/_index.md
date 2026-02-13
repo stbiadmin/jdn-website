@@ -75,7 +75,7 @@ highlight_name: true
 
 Hey! I'm Justin Norman.
 
-I'm a fifth year PhD candidate at UC Berkeley, where I am advised by [Hany Farid](https://farid.berkeley.edu/). My research interests include computer vision,  generative AI (LLMs and VLMs) and machine learning engineering. I am a recipient of the [Marcus Foster Fellowship](https://bse.berkeley.edu/fellowship-established-honor-dr-marcus-foster) and the [FASPE Design & Technology Fellowship](https://www.faspe-ethics.org/design-technology/).
+I'm a AI/ML Engineer and Researcher at UC Berkeley, working with [Hany Farid](https://farid.berkeley.edu/), [Mike Rivera](https://www.ischool.berkeley.edu/people/michael-rivera) and [Alex Hughes](https://d-alex-hughes.github.io/). My research interests include computer vision, generative AI (LLMs and VLMs) and machine learning engineering. I am a recipient of the [Marcus Foster Fellowship](https://bse.berkeley.edu/fellowship-established-honor-dr-marcus-foster) and the [FASPE Design & Technology Fellowship](https://www.faspe-ethics.org/design-technology/).
 
 My PhD projects are focused on deepfake detection, content authenticity, improving the robustness of generative computer vision systems, and LLM hallucination detection, mitigation and prevention.
 
