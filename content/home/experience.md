@@ -24,7 +24,7 @@ date_format: Jan 2006
 experience:
   - title: CTO / Head of AI
     company: Vera AI
-    company_url: 'askvera.io'
+    company_url: ''
     company_logo: Vera_logo
     location: California
     date_start: '2022-06-01'
