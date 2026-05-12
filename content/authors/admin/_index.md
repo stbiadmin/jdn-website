@@ -6,7 +6,7 @@ title: Justin D. Norman
 superuser: true
 
 # Role/position/tagline
-role: PhD Candidate | ML/AI Leader 
+role: ML/AI Leader
 
 # Organizations/Affiliations to show in About widget
 organizations:
