@@ -37,7 +37,7 @@ links:
 - name: Workshop
   url: 'https://humansofgenerativeai.github.io/'
 
-url_pdf: '/uploads/Norman_CVPR_HuG_Poster.pdf'
+url_pdf: '/uploads/Norman_CVPR_HuG_Talk.pdf'
 url_code: ''
 url_dataset: ''
 url_poster: '/uploads/Norman_CVPR_HuG_Poster.pdf'
