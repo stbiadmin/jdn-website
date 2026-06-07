@@ -56,7 +56,6 @@ image:
 
 # Associated Projects (optional).
 projects:
-- judge
 
 # Slides (optional).
 slides:
