@@ -30,7 +30,7 @@ education:
   courses:
   - course: PhD in Computer Vision | Machine Learning
     institution: UC Berkeley
-    year: 2025 (expected)
+    year: 2026
   - course: MBA w/ concentration in Business Analytics
     institution: University of Southern California 
     year: 2015
