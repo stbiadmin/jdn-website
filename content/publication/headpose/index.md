@@ -13,7 +13,7 @@ author_notes:
 - "Equal contribution"
 - ""
 
-date: "2025-12-02T00:00:00Z"
+date: "2026-08-22T00:00:00Z"
 doi: "10.48550/arXiv.2512.03199"
 
 # Schedule page publish date (NOT publication's date).
@@ -23,11 +23,11 @@ publishDate: "2025-12-02T00:00:00Z"
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Patent
-publication_types: ["3"]
+publication_types: ["1"]
 
 # Publication name and optional abbreviated publication name.
-publication: ""
-publication_short: "(Under Review)"
+publication: "International Conference on Pattern Recognition (ICPR) PAVER Workshop"
+publication_short: (ICPR PAVER Workshop 2026)
 
 abstract: "Biometric facial recognition models often demonstrate significant decreases in accuracy when processing real-world images, often characterized by poor quality, non-frontal subject poses, and subject occlusions. We investigate whether targeted, AI-driven, head-pose correction and image restoration can improve recognition accuracy. Using a model-agnostic, large-scale, forensic-evaluation pipeline, we assess the impact of three restoration approaches: 3D reconstruction (NextFace), 2D frontalization (CFR-GAN), and feature enhancement (CodeFormer). We find that naive application of these techniques substantially degrades facial recognition accuracy. However, we also find that selective application of CFR-GAN combined with CodeFormer yields meaningful improvements."
 
