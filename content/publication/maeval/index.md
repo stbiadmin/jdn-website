@@ -17,7 +17,7 @@ author_notes:
 - "Equal contribution"
 
 date: "2025-05-22T00:00:00Z"
-doi: "10.48550/arXiv.2505.17345"
+doi: "10.1145/3803291.3803328"
 
 
 # Schedule page publish date (NOT publication's date).
