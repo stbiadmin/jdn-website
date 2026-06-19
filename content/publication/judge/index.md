@@ -8,7 +8,7 @@ authors:
 - D. Alex Hughes
 
 date: "2026-11-05T00:00:00Z"
-doi: ""
+doi: "10.48550/arXiv.2606.19544"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: "2026-06-07T00:00:00Z"
@@ -38,7 +38,7 @@ featured: true
 # - name: Webpage
 #   url: ''
 
-url_pdf: ''
+url_pdf: 'https://arxiv.org/pdf/2606.19544'
 url_code: ''
 url_dataset: ''
 url_poster: ''
