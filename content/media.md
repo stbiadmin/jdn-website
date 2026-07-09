@@ -11,18 +11,30 @@ header:
 ---
 
 <style>
-/* Break out of the theme's narrow content column and use full page width */
-.media-page {
-  width: 100vw;
-  position: relative;
-  left: calc(-50vw + 50%);
-  padding: 0 clamp(1rem, 5vw, 3.5rem);
-  box-sizing: border-box;
-  max-width: none;
+/* Force the theme's narrow-column ancestors to release constraints while we're on this page */
+body.media-full-width .universal-wrapper,
+body.media-full-width .article-container,
+body.media-full-width main .container,
+body.media-full-width main article,
+body.media-full-width main > div,
+body.media-full-width .col-12,
+body.media-full-width .col-lg-8,
+body.media-full-width .col-md-9,
+body.media-full-width .col-md-10,
+body.media-full-width .col-lg-9,
+body.media-full-width .col-lg-10 {
+  max-width: 100% !important;
+  width: 100% !important;
+  flex: 0 0 100% !important;
+  overflow: visible !important;
 }
-.media-inner {
-  max-width: 1240px;
+
+.media-page {
+  width: 100%;
+  max-width: 1400px;
   margin: 0 auto;
+  padding: 0 clamp(1rem, 4vw, 3rem);
+  box-sizing: border-box;
 }
 .media-intro {
   max-width: 760px;
@@ -39,19 +51,51 @@ header:
   margin: 2.5rem 0 1.25rem;
   border-bottom: 1px solid #e5e5e5;
   padding-bottom: 0.6rem;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.media-h2-hint {
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  color: #aaa;
+  font-weight: 400;
+  text-transform: none;
+  font-style: italic;
 }
 
-/* Featured — flex-wrap with center justification so incomplete rows center */
-.media-featured {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1.5rem;
-  margin-bottom: 1.5rem;
+/* -------- CAROUSEL -------- */
+.media-featured-carousel {
+  overflow: hidden;
+  position: relative;
+  padding: 0.75rem 0;
+  margin: 0 -1rem 2rem;
+  -webkit-mask-image: linear-gradient(to right, transparent 0, #000 4%, #000 96%, transparent 100%);
+          mask-image: linear-gradient(to right, transparent 0, #000 4%, #000 96%, transparent 100%);
 }
+.media-featured-track {
+  display: flex;
+  gap: 1.5rem;
+  width: max-content;
+  animation: media-scroll 55s linear infinite;
+  padding: 0 1rem;
+}
+.media-featured-carousel:hover .media-featured-track {
+  animation-play-state: paused;
+}
+@keyframes media-scroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .media-featured-track { animation: none; }
+  .media-featured-carousel { overflow-x: auto; -webkit-mask-image: none; mask-image: none; }
+}
+
+/* Cards */
 .media-featured-card {
-  flex: 1 1 260px;
-  max-width: 320px;
+  flex: 0 0 300px;
+  width: 300px;
   display: flex;
   flex-direction: column;
   background: #fff;
@@ -65,7 +109,7 @@ header:
 }
 .media-featured-card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 12px 32px rgba(0,0,0,0.12);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.14);
   color: inherit !important;
 }
 .media-featured-thumb {
@@ -81,7 +125,7 @@ header:
 }
 .tile-inner { line-height: 1.15; }
 
-/* O'Reilly signature red + serif wordmark */
+/* Outlet tiles */
 .outlet-oreilly { background: #d84924; }
 .oreilly-mark {
   font-family: Georgia, 'Times New Roman', serif;
@@ -99,8 +143,6 @@ header:
   opacity: 0.9;
   color: #fff;
 }
-
-/* CNN — black background with real CNN red logo mark */
 .outlet-cnn { background: #000; }
 .cnn-mark {
   width: 100px;
@@ -115,8 +157,6 @@ header:
   letter-spacing: 0.02em;
   color: #fff;
 }
-
-/* VentureBeat — black with two-tone wordmark */
 .outlet-vb { background: #131313; }
 .vb-mark {
   font-family: 'Helvetica Neue', Arial, sans-serif;
@@ -157,7 +197,7 @@ header:
   margin: 0;
 }
 
-/* Tabs */
+/* -------- TABS + ARCHIVE -------- */
 .media-tabs {
   display: flex;
   gap: 0.2rem;
@@ -188,7 +228,6 @@ header:
   border-bottom-color: #2d7a4d;
   font-weight: 600;
 }
-
 .media-archive-note {
   font-size: 0.78rem;
   color: #888;
@@ -202,7 +241,6 @@ header:
   font-weight: 600;
   margin-right: 0.15rem;
 }
-
 .media-section { display: none; margin-bottom: 2rem; }
 .media-section.active { display: block; }
 .media-section-title {
@@ -214,8 +252,6 @@ header:
   font-weight: 600;
 }
 .media-section:first-of-type .media-section-title { margin-top: 0.5rem; }
-
-/* Archive — flex-wrap so trailing items center rather than hang */
 .media-grid {
   display: flex;
   flex-wrap: wrap;
@@ -262,21 +298,20 @@ header:
   margin: 0;
 }
 @media (max-width: 640px) {
-  .media-featured-card { max-width: none; }
   .media-item { max-width: none; }
 }
 </style>
 
 <div class="media-page">
-<div class="media-inner">
 
 <div class="media-intro">
 A selection of interviews, talks, essays, and press covering roughly a decade of work in ML and AI — from federated learning at Cloudera Fast Forward Labs, to running data science and product at Yelp during the COVID economic story, to building generative AI systems at Vera AI, to current Berkeley research on deepfakes, facial recognition, and LLM evaluation. Curated, not exhaustive.
 </div>
 
-<div class="media-h2">Featured</div>
+<div class="media-h2"><span>Featured</span><span class="media-h2-hint">Hover to pause · click to open</span></div>
 
-<div class="media-featured">
+<div class="media-featured-carousel" aria-label="Featured media carousel">
+<div class="media-featured-track">
 
 <a class="media-featured-card" href="https://www.oreilly.com/radar/podcast/generative-ai-in-the-real-world-competing-in-a-generative-world-with-justin-norman/" target="_blank" rel="noopener">
   <div class="media-featured-thumb outlet-oreilly">
@@ -288,7 +323,7 @@ A selection of interviews, talks, essays, and press covering roughly a decade of
   <div class="media-featured-body">
     <div class="media-featured-kicker">Podcast · 2024</div>
     <h3>Competing in a Generative World</h3>
-    <p>Long-form conversation with Ben Lorica on how product management, evaluation, and moats have shifted since generative AI became the substrate.</p>
+    <p>Long-form conversation with Ben Lorica on how PM, evaluation, and moats have shifted since generative AI became the substrate.</p>
   </div>
 </a>
 
@@ -338,6 +373,69 @@ A selection of interviews, talks, essays, and press covering roughly a decade of
   </div>
 </a>
 
+<!-- Duplicated for seamless infinite scroll -->
+
+<a class="media-featured-card" href="https://www.oreilly.com/radar/podcast/generative-ai-in-the-real-world-competing-in-a-generative-world-with-justin-norman/" target="_blank" rel="noopener" aria-hidden="true">
+  <div class="media-featured-thumb outlet-oreilly">
+    <div class="tile-inner">
+      <div class="oreilly-mark">O'REILLY<sup>®</sup></div>
+      <div class="oreilly-sub">Radar Podcast</div>
+    </div>
+  </div>
+  <div class="media-featured-body">
+    <div class="media-featured-kicker">Podcast · 2024</div>
+    <h3>Competing in a Generative World</h3>
+    <p>Long-form conversation with Ben Lorica on how PM, evaluation, and moats have shifted since generative AI became the substrate.</p>
+  </div>
+</a>
+
+<a class="media-featured-card" href="https://youtu.be/-sB12gk9ESA?t=2320" target="_blank" rel="noopener" aria-hidden="true">
+  <div class="media-featured-thumb" style="background-image: url('/media-thumbnails/pbs-nova.jpg');"></div>
+  <div class="media-featured-body">
+    <div class="media-featured-kicker">PBS NOVA · 2024</div>
+    <h3>A.I. Revolution</h3>
+    <p>Featured on the PBS NOVA prime-time science documentary on AI, alongside Hany Farid, on detecting and defending against deepfakes.</p>
+  </div>
+</a>
+
+<a class="media-featured-card" href="https://twitter.com/jchatterleyCNN/status/1288195360951803907" target="_blank" rel="noopener" aria-hidden="true">
+  <div class="media-featured-thumb outlet-cnn">
+    <div class="tile-inner">
+      <img src="/media-thumbnails/cnn.svg" alt="CNN" class="cnn-mark">
+      <div class="cnn-sub">First Move with Julia Chatterley</div>
+    </div>
+  </div>
+  <div class="media-featured-body">
+    <div class="media-featured-kicker">Live TV · 2020</div>
+    <h3>Yelp economic data on CNN's global markets show</h3>
+    <p>Live interview on Yelp's business-closure and reopening data during the pandemic, as part of CNN International's live markets coverage.</p>
+  </div>
+</a>
+
+<a class="media-featured-card" href="https://twimlai.com/twiml-talk-185-federated-ml-for-edge-applications-with-justin-norman/" target="_blank" rel="noopener" aria-hidden="true">
+  <div class="media-featured-thumb" style="background-image: url('/media-thumbnails/twiml.jpg');"></div>
+  <div class="media-featured-body">
+    <div class="media-featured-kicker">TWIML AI Podcast · 2018</div>
+    <h3>Federated ML for Edge Applications</h3>
+    <p>Early practical framing of federated learning at Cloudera Fast Forward Labs — a technique that has since become mainstream.</p>
+  </div>
+</a>
+
+<a class="media-featured-card" href="https://venturebeat.com/transform-2020-video-hub/#/channel/technology-and-automation/ifme4v3rozcu2rtshfxgon3gmrxem6bx" target="_blank" rel="noopener" aria-hidden="true">
+  <div class="media-featured-thumb outlet-vb">
+    <div class="tile-inner">
+      <div class="vb-mark">Venture<span>Beat</span></div>
+      <div class="vb-sub">Transform 2020</div>
+    </div>
+  </div>
+  <div class="media-featured-body">
+    <div class="media-featured-kicker">Keynote · 2020</div>
+    <h3>Rewards and challenges of building and scaling a custom AI system</h3>
+    <p>Keynote on running an in-house ML platform at scale, drawn from Yelp's Bunsen experimentation stack.</p>
+  </div>
+</a>
+
+</div>
 </div>
 
 <div class="media-tabs">
@@ -529,10 +627,26 @@ A selection of interviews, talks, essays, and press covering roughly a decade of
 </div>
 
 </div>
-</div>
 
 <script>
 (function () {
+  // Add body class so our full-width CSS overrides apply
+  document.body.classList.add('media-full-width');
+
+  // Belt-and-suspenders: walk up the DOM and remove max-width constraints
+  // on wrapping ancestors so the carousel can span the full page width.
+  var page = document.querySelector('.media-page');
+  if (page) {
+    var el = page.parentElement;
+    while (el && el.tagName && el.tagName.toLowerCase() !== 'body') {
+      el.style.maxWidth = 'none';
+      el.style.width = '100%';
+      el.style.overflow = 'visible';
+      el = el.parentElement;
+    }
+  }
+
+  // Tab filter
   var buttons = document.querySelectorAll('.media-tab-btn');
   var sections = document.querySelectorAll('.media-section');
   buttons.forEach(function (btn) {
