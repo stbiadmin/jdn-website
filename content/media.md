@@ -44,11 +44,20 @@ body.media-full-width .col-md-10 {
   box-sizing: border-box;
 }
 .media-intro {
-  max-width: 760px;
+  max-width: none;
   margin: 0 auto 2.5rem;
-  font-size: 1.05rem;
-  line-height: 1.65;
+  padding: 0 1rem;
+  font-size: 1rem;
+  line-height: 1.55;
   color: #555;
+  text-align: center;
+  white-space: nowrap;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.media-intro::-webkit-scrollbar { display: none; }
+@media (max-width: 900px) {
+  .media-intro { white-space: normal; }
 }
 .media-h2 {
   font-size: 0.78rem;
@@ -149,6 +158,7 @@ body.media-full-width .col-md-10 {
   color: inherit !important;
 }
 .media-featured-thumb {
+  position: relative;
   aspect-ratio: 16/9;
   background-size: cover;
   background-position: center;
@@ -160,6 +170,29 @@ body.media-full-width .col-md-10 {
   text-align: center;
 }
 .tile-inner { line-height: 1.15; }
+
+/* Small brand badge in the top-right of each featured tile */
+.tile-corner-logo {
+  position: absolute;
+  top: 0.7rem;
+  right: 0.7rem;
+  z-index: 2;
+  background: rgba(255,255,255,0.96);
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+  padding: 5px 9px;
+  height: 26px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: content-box;
+}
+.tile-corner-logo img {
+  height: 100%;
+  width: auto;
+  display: block;
+  max-width: 90px;
+}
 
 /* Outlet tiles */
 .outlet-oreilly { background: #d84924; }
@@ -182,22 +215,20 @@ body.media-full-width .col-md-10 {
 /* -------- TABS -------- */
 .media-tabs {
   display: flex;
-  gap: 0.2rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
   border-bottom: 1px solid #e5e5e5;
   margin: 3rem 0 1.75rem;
-  overflow-x: auto;
   padding: 0;
-  -webkit-overflow-scrolling: touch;
-  /* Hide scrollbar */
-  scrollbar-width: none;
-  -ms-overflow-style: none;
+  flex-wrap: wrap;
+  row-gap: 0.4rem;
 }
-.media-tabs::-webkit-scrollbar { display: none; width: 0; height: 0; }
 .media-tab-btn {
   background: none;
   border: none;
-  padding: 0.7rem 0.95rem;
-  font-size: 0.82rem;
+  padding: 0.7rem 1.1rem;
+  font-size: 0.85rem;
   font-weight: 500;
   color: #777;
   cursor: pointer;
@@ -210,6 +241,16 @@ body.media-full-width .col-md-10 {
 }
 .media-tab-btn:hover { color: #222; }
 .media-tab-btn.active { color: #2d7a4d; border-bottom-color: #2d7a4d; font-weight: 600; }
+.tab-sep {
+  display: inline-block;
+  width: 3px;
+  height: 3px;
+  background: #ccc;
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-bottom: -1px;
+  align-self: center;
+}
 
 .media-archive-note {
   font-size: 0.78rem;
@@ -272,6 +313,7 @@ A selection of interviews, talks, essays, and press covering over a decade of my
 
 <a class="media-featured-card" href="https://www.oreilly.com/radar/podcast/generative-ai-in-the-real-world-competing-in-a-generative-world-with-justin-norman/" target="_blank" rel="noopener">
   <div class="media-featured-thumb outlet-oreilly">
+    <div class="tile-corner-logo"><img src="/media-thumbnails/logo-oreilly.svg" alt=""></div>
     <div class="tile-inner">
       <div class="oreilly-mark">O'REILLY<sup>®</sup></div>
       <div class="oreilly-sub">Radar Podcast</div>
@@ -285,7 +327,7 @@ A selection of interviews, talks, essays, and press covering over a decade of my
 </a>
 
 <a class="media-featured-card" href="https://youtu.be/-sB12gk9ESA?t=2320" target="_blank" rel="noopener">
-  <div class="media-featured-thumb" style="background-image: url('/media-thumbnails/pbs-nova.jpg');"></div>
+  <div class="media-featured-thumb" style="background-image: url('/media-thumbnails/pbs-nova.jpg');"><div class="tile-corner-logo"><img src="/media-thumbnails/logo-pbs-nova.svg" alt=""></div></div>
   <div class="media-featured-body">
     <div class="media-featured-kicker">PBS NOVA · 2024</div>
     <h3>A.I. Revolution</h3>
@@ -295,6 +337,7 @@ A selection of interviews, talks, essays, and press covering over a decade of my
 
 <a class="media-featured-card" href="https://twitter.com/jchatterleyCNN/status/1288195360951803907" target="_blank" rel="noopener">
   <div class="media-featured-thumb outlet-cnn">
+    <div class="tile-corner-logo"><img src="/media-thumbnails/logo-cnn.svg" alt=""></div>
     <div class="tile-inner">
       <img src="/media-thumbnails/cnn.svg" alt="CNN" class="cnn-mark">
       <div class="cnn-sub">First Move with Julia Chatterley</div>
@@ -308,7 +351,7 @@ A selection of interviews, talks, essays, and press covering over a decade of my
 </a>
 
 <a class="media-featured-card" href="https://twimlai.com/twiml-talk-185-federated-ml-for-edge-applications-with-justin-norman/" target="_blank" rel="noopener">
-  <div class="media-featured-thumb" style="background-image: url('/media-thumbnails/twiml.jpg');"></div>
+  <div class="media-featured-thumb" style="background-image: url('/media-thumbnails/twiml.jpg');"><div class="tile-corner-logo"><img src="/media-thumbnails/logo-twiml.svg" alt=""></div></div>
   <div class="media-featured-body">
     <div class="media-featured-kicker">TWIML AI Podcast · 2018</div>
     <h3>Federated ML for Edge Applications</h3>
@@ -318,6 +361,7 @@ A selection of interviews, talks, essays, and press covering over a decade of my
 
 <a class="media-featured-card" href="https://venturebeat.com/transform-2020-video-hub/#/channel/technology-and-automation/ifme4v3rozcu2rtshfxgon3gmrxem6bx" target="_blank" rel="noopener">
   <div class="media-featured-thumb outlet-vb">
+    <div class="tile-corner-logo"><img src="/media-thumbnails/logo-venturebeat.svg" alt=""></div>
     <div class="tile-inner">
       <div class="vb-mark">Venture<span>Beat</span></div>
       <div class="vb-sub">Transform 2020</div>
@@ -334,6 +378,7 @@ A selection of interviews, talks, essays, and press covering over a decade of my
 
 <a class="media-featured-card" href="https://www.oreilly.com/radar/podcast/generative-ai-in-the-real-world-competing-in-a-generative-world-with-justin-norman/" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1">
   <div class="media-featured-thumb outlet-oreilly">
+    <div class="tile-corner-logo"><img src="/media-thumbnails/logo-oreilly.svg" alt=""></div>
     <div class="tile-inner">
       <div class="oreilly-mark">O'REILLY<sup>®</sup></div>
       <div class="oreilly-sub">Radar Podcast</div>
@@ -347,7 +392,7 @@ A selection of interviews, talks, essays, and press covering over a decade of my
 </a>
 
 <a class="media-featured-card" href="https://youtu.be/-sB12gk9ESA?t=2320" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1">
-  <div class="media-featured-thumb" style="background-image: url('/media-thumbnails/pbs-nova.jpg');"></div>
+  <div class="media-featured-thumb" style="background-image: url('/media-thumbnails/pbs-nova.jpg');"><div class="tile-corner-logo"><img src="/media-thumbnails/logo-pbs-nova.svg" alt=""></div></div>
   <div class="media-featured-body">
     <div class="media-featured-kicker">PBS NOVA · 2024</div>
     <h3>A.I. Revolution</h3>
@@ -357,6 +402,7 @@ A selection of interviews, talks, essays, and press covering over a decade of my
 
 <a class="media-featured-card" href="https://twitter.com/jchatterleyCNN/status/1288195360951803907" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1">
   <div class="media-featured-thumb outlet-cnn">
+    <div class="tile-corner-logo"><img src="/media-thumbnails/logo-cnn.svg" alt=""></div>
     <div class="tile-inner">
       <img src="/media-thumbnails/cnn.svg" alt="CNN" class="cnn-mark">
       <div class="cnn-sub">First Move with Julia Chatterley</div>
@@ -370,7 +416,7 @@ A selection of interviews, talks, essays, and press covering over a decade of my
 </a>
 
 <a class="media-featured-card" href="https://twimlai.com/twiml-talk-185-federated-ml-for-edge-applications-with-justin-norman/" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1">
-  <div class="media-featured-thumb" style="background-image: url('/media-thumbnails/twiml.jpg');"></div>
+  <div class="media-featured-thumb" style="background-image: url('/media-thumbnails/twiml.jpg');"><div class="tile-corner-logo"><img src="/media-thumbnails/logo-twiml.svg" alt=""></div></div>
   <div class="media-featured-body">
     <div class="media-featured-kicker">TWIML AI Podcast · 2018</div>
     <h3>Federated ML for Edge Applications</h3>
@@ -380,6 +426,7 @@ A selection of interviews, talks, essays, and press covering over a decade of my
 
 <a class="media-featured-card" href="https://venturebeat.com/transform-2020-video-hub/#/channel/technology-and-automation/ifme4v3rozcu2rtshfxgon3gmrxem6bx" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1">
   <div class="media-featured-thumb outlet-vb">
+    <div class="tile-corner-logo"><img src="/media-thumbnails/logo-venturebeat.svg" alt=""></div>
     <div class="tile-inner">
       <div class="vb-mark">Venture<span>Beat</span></div>
       <div class="vb-sub">Transform 2020</div>
@@ -401,16 +448,20 @@ A selection of interviews, talks, essays, and press covering over a decade of my
 </div>
 
 <div class="media-tabs">
-  <button class="media-tab-btn active" data-tab="all">All</button>
+  <button class="media-tab-btn" data-tab="all">All</button>
+  <span class="tab-sep"></span>
   <button class="media-tab-btn" data-tab="podcasts">Podcasts &amp; Conversations</button>
+  <span class="tab-sep"></span>
   <button class="media-tab-btn" data-tab="talks">Talks &amp; Lectures</button>
-  <button class="media-tab-btn" data-tab="press">Press &amp; Commentary</button>
+  <span class="tab-sep"></span>
+  <button class="media-tab-btn active" data-tab="press">Press &amp; Commentary</button>
+  <span class="tab-sep"></span>
   <button class="media-tab-btn" data-tab="writing">Writing</button>
 </div>
 
 <p class="media-archive-note">Click any item to open in a new tab.</p>
 
-<div class="media-section active" data-section="podcasts">
+<div class="media-section" data-section="podcasts">
 <div class="media-section-title">Podcasts &amp; Conversations</div>
 <div class="media-grid">
 
@@ -447,7 +498,7 @@ A selection of interviews, talks, essays, and press covering over a decade of my
 </div>
 </div>
 
-<div class="media-section active" data-section="talks">
+<div class="media-section" data-section="talks">
 <div class="media-section-title">Talks &amp; Lectures</div>
 <div class="media-grid">
 
@@ -551,7 +602,7 @@ A selection of interviews, talks, essays, and press covering over a decade of my
 </div>
 </div>
 
-<div class="media-section active" data-section="writing">
+<div class="media-section" data-section="writing">
 <div class="media-section-title">Writing</div>
 <div class="media-grid">
 
@@ -653,30 +704,33 @@ A selection of interviews, talks, essays, and press covering over a decade of my
     function set(dir) { currentSpeed = dir * 3.5; }
     function reset()  { currentSpeed = baseSpeed; }
 
+    // NOTE: arrows are anchored to the direction the *carousel* moves visually.
+    // Left arrow => carousel content shifts leftward.
+    // Right arrow => carousel content shifts rightward.
     if (leftBtn) {
-      leftBtn.addEventListener('mouseenter', function () { set(-1); });
+      leftBtn.addEventListener('mouseenter', function () { set(1); });
       leftBtn.addEventListener('mouseleave', reset);
-      leftBtn.addEventListener('mousedown',  function () { set(-1); });
+      leftBtn.addEventListener('mousedown',  function () { set(1); });
       leftBtn.addEventListener('mouseup',    reset);
-      leftBtn.addEventListener('touchstart', function (e) { e.preventDefault(); set(-1); }, {passive:false});
+      leftBtn.addEventListener('touchstart', function (e) { e.preventDefault(); set(1); }, {passive:false});
       leftBtn.addEventListener('touchend',   reset);
       leftBtn.addEventListener('click', function (e) {
         e.preventDefault();
-        offset -= 340;
-        if (offset < 0) offset += half;
+        offset += 340;
+        if (offset >= half) offset -= half;
       });
     }
     if (rightBtn) {
-      rightBtn.addEventListener('mouseenter', function () { set(1); });
+      rightBtn.addEventListener('mouseenter', function () { set(-1); });
       rightBtn.addEventListener('mouseleave', reset);
-      rightBtn.addEventListener('mousedown',  function () { set(1); });
+      rightBtn.addEventListener('mousedown',  function () { set(-1); });
       rightBtn.addEventListener('mouseup',    reset);
-      rightBtn.addEventListener('touchstart', function (e) { e.preventDefault(); set(1); }, {passive:false});
+      rightBtn.addEventListener('touchstart', function (e) { e.preventDefault(); set(-1); }, {passive:false});
       rightBtn.addEventListener('touchend',   reset);
       rightBtn.addEventListener('click', function (e) {
         e.preventDefault();
-        offset += 340;
-        if (offset >= half) offset -= half;
+        offset -= 340;
+        if (offset < 0) offset += half;
       });
     }
   }
