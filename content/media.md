@@ -289,6 +289,20 @@ body.media-full-width .col-md-10 {
 .media-item-kicker { font-size: 0.66rem; letter-spacing: 0.14em; text-transform: uppercase; color: #888; margin-bottom: 0.35rem; }
 .media-item h4 { font-size: 0.98rem; line-height: 1.35; margin: 0 0 0.35rem 0; font-weight: 600; color: #222; }
 .media-item p { font-size: 0.85rem; line-height: 1.5; color: #666; margin: 0; }
+.media-item { position: relative; }
+.media-item-logo {
+  position: absolute;
+  top: 0.85rem;
+  right: 0.95rem;
+  height: 18px;
+  width: auto;
+  max-width: 90px;
+  opacity: 0.62;
+  transition: opacity 0.15s;
+  pointer-events: none;
+}
+.media-item:hover .media-item-logo { opacity: 1; }
+.media-item.has-logo { padding-right: 110px; }
 @media (max-width: 640px) {
   .media-item { max-width: none; }
   .carousel-arrow { width: 36px; height: 36px; }
@@ -539,55 +553,64 @@ A selection of interviews, talks, essays, and press covering over a decade of my
 <div class="media-section-title">Press &amp; Commentary</div>
 <div class="media-grid">
 
-<a class="media-item" href="https://ccst.us/ccst-launches-california-ai-science-residency/" target="_blank" rel="noopener">
+<a class="media-item has-logo" href="https://ccst.us/ccst-launches-california-ai-science-residency/" target="_blank" rel="noopener">
+  <img class="media-item-logo" src="/media-thumbnails/logo-ccst.svg" alt="">
   <div class="media-item-kicker">CCST · 2025</div>
   <h4>California AI Science Residency Program on Frontier AI Safety</h4>
   <p>Appointment as an inaugural AI Science Advisor to CalOES and CDT.</p>
 </a>
 
-<a class="media-item" href="https://vcresearch.berkeley.edu/news/hany-farid-and-i-school-phd-students-featured-pbs-nova" target="_blank" rel="noopener">
+<a class="media-item has-logo" href="https://vcresearch.berkeley.edu/news/hany-farid-and-i-school-phd-students-featured-pbs-nova" target="_blank" rel="noopener">
+  <img class="media-item-logo" src="/media-thumbnails/logo-pbs-nova.svg" alt="">
   <div class="media-item-kicker">PBS NOVA · 2024</div>
   <h4>Berkeley featured on PBS NOVA's A.I. Revolution</h4>
   <p>Deepfake detection research with Hany Farid on PBS's flagship science documentary.</p>
 </a>
 
-<a class="media-item" href="https://techcrunch.com/2023/08/30/betaworks-goes-all-in-on-augmentative-ai-in-latest-camp-cohort-were-rabidly-interested/" target="_blank" rel="noopener">
+<a class="media-item has-logo" href="https://techcrunch.com/2023/08/30/betaworks-goes-all-in-on-augmentative-ai-in-latest-camp-cohort-were-rabidly-interested/" target="_blank" rel="noopener">
+  <img class="media-item-logo" src="/media-thumbnails/logo-techcrunch.svg" alt="">
   <div class="media-item-kicker">TechCrunch · 2023</div>
   <h4>Betaworks goes all in on augmentative AI in latest Camp cohort</h4>
   <p>Coverage of the Vera AI cohort.</p>
 </a>
 
-<a class="media-item" href="https://www.bloomberg.com/news/articles/2021-01-26/u-s-restaurant-openings-picked-up-pace-in-fourth-quarter-2020" target="_blank" rel="noopener">
+<a class="media-item has-logo" href="https://www.bloomberg.com/news/articles/2021-01-26/u-s-restaurant-openings-picked-up-pace-in-fourth-quarter-2020" target="_blank" rel="noopener">
+  <img class="media-item-logo" src="/media-thumbnails/logo-bloomberg.svg" alt="">
   <div class="media-item-kicker">Bloomberg · 2021</div>
   <h4>U.S. Restaurant Openings Quicken, Hinting at Rebound</h4>
   <p>Yelp reopening trends as an early recovery signal.</p>
 </a>
 
-<a class="media-item" href="https://venturebeat.com/2020/07/18/ai-needs-systemic-solutions-to-systemic-bias-injustice-and-inequality/" target="_blank" rel="noopener">
+<a class="media-item has-logo" href="https://venturebeat.com/2020/07/18/ai-needs-systemic-solutions-to-systemic-bias-injustice-and-inequality/" target="_blank" rel="noopener">
+  <img class="media-item-logo" src="/media-thumbnails/logo-venturebeat.svg" alt="">
   <div class="media-item-kicker">VentureBeat · 2020</div>
   <h4>AI needs systemic solutions to systemic bias, injustice, and inequality</h4>
   <p>Op-ed on structural fixes vs. patchwork mitigations in AI systems.</p>
 </a>
 
-<a class="media-item" href="https://www.cnbc.com/2020/09/16/yelp-data-shows-60percent-of-business-closures-due-to-the-coronavirus-pandemic-are-now-permanent.html" target="_blank" rel="noopener">
+<a class="media-item has-logo" href="https://www.cnbc.com/2020/09/16/yelp-data-shows-60percent-of-business-closures-due-to-the-coronavirus-pandemic-are-now-permanent.html" target="_blank" rel="noopener">
+  <img class="media-item-logo" src="/media-thumbnails/logo-cnbc.svg" alt="">
   <div class="media-item-kicker">CNBC · 2020</div>
   <h4>60% of pandemic business closures are now permanent</h4>
   <p>Coverage of Yelp economic recovery data.</p>
 </a>
 
-<a class="media-item" href="https://www.nytimes.com/2020/07/13/business/small-businesses-coronavirus.html" target="_blank" rel="noopener">
+<a class="media-item has-logo" href="https://www.nytimes.com/2020/07/13/business/small-businesses-coronavirus.html" target="_blank" rel="noopener">
+  <img class="media-item-logo" src="/media-thumbnails/logo-nyt.svg" alt="">
   <div class="media-item-kicker">The New York Times · 2020</div>
   <h4>Small businesses in the pandemic</h4>
   <p>Quoted analysis of Yelp closure trends.</p>
 </a>
 
-<a class="media-item" href="https://www.wsj.com/articles/140-000-businesses-listed-on-yelp-are-still-closed-because-of-covid-19-pandemic-11593057601" target="_blank" rel="noopener">
+<a class="media-item has-logo" href="https://www.wsj.com/articles/140-000-businesses-listed-on-yelp-are-still-closed-because-of-covid-19-pandemic-11593057601" target="_blank" rel="noopener">
+  <img class="media-item-logo" src="/media-thumbnails/logo-wsj.svg" alt="">
   <div class="media-item-kicker">The Wall Street Journal · 2020</div>
   <h4>140,000 businesses listed on Yelp still closed because of COVID-19</h4>
   <p>Yelp closure data as a leading indicator for the small-business economy.</p>
 </a>
 
-<a class="media-item" href="https://www.marketplace.org/2020/09/15/pandemic-recovery-for-restaurants-slowing-down/" target="_blank" rel="noopener">
+<a class="media-item has-logo" href="https://www.marketplace.org/2020/09/15/pandemic-recovery-for-restaurants-slowing-down/" target="_blank" rel="noopener">
+  <img class="media-item-logo" src="/media-thumbnails/logo-marketplace.svg" alt="">
   <div class="media-item-kicker">Marketplace · 2020</div>
   <h4>Pandemic recovery for restaurants is slowing down</h4>
   <p>National radio segment on Yelp-observed recovery trajectories.</p>
