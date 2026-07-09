@@ -313,7 +313,6 @@ A selection of interviews, talks, essays, and press covering over a decade of my
 
 <a class="media-featured-card" href="https://www.oreilly.com/radar/podcast/generative-ai-in-the-real-world-competing-in-a-generative-world-with-justin-norman/" target="_blank" rel="noopener">
   <div class="media-featured-thumb outlet-oreilly">
-    <div class="tile-corner-logo"><img src="/media-thumbnails/logo-oreilly.svg" alt=""></div>
     <div class="tile-inner">
       <div class="oreilly-mark">O'REILLY<sup>®</sup></div>
       <div class="oreilly-sub">Radar Podcast</div>
@@ -327,7 +326,7 @@ A selection of interviews, talks, essays, and press covering over a decade of my
 </a>
 
 <a class="media-featured-card" href="https://youtu.be/-sB12gk9ESA?t=2320" target="_blank" rel="noopener">
-  <div class="media-featured-thumb" style="background-image: url('/media-thumbnails/pbs-nova.jpg');"><div class="tile-corner-logo"><img src="/media-thumbnails/logo-pbs-nova.svg" alt=""></div></div>
+  <div class="media-featured-thumb" style="background-image: url('/media-thumbnails/pbs-nova.jpg');"></div>
   <div class="media-featured-body">
     <div class="media-featured-kicker">PBS NOVA · 2024</div>
     <h3>A.I. Revolution</h3>
@@ -337,7 +336,6 @@ A selection of interviews, talks, essays, and press covering over a decade of my
 
 <a class="media-featured-card" href="https://twitter.com/jchatterleyCNN/status/1288195360951803907" target="_blank" rel="noopener">
   <div class="media-featured-thumb outlet-cnn">
-    <div class="tile-corner-logo"><img src="/media-thumbnails/logo-cnn.svg" alt=""></div>
     <div class="tile-inner">
       <img src="/media-thumbnails/cnn.svg" alt="CNN" class="cnn-mark">
       <div class="cnn-sub">First Move with Julia Chatterley</div>
@@ -351,7 +349,7 @@ A selection of interviews, talks, essays, and press covering over a decade of my
 </a>
 
 <a class="media-featured-card" href="https://twimlai.com/twiml-talk-185-federated-ml-for-edge-applications-with-justin-norman/" target="_blank" rel="noopener">
-  <div class="media-featured-thumb" style="background-image: url('/media-thumbnails/twiml.jpg');"><div class="tile-corner-logo"><img src="/media-thumbnails/logo-twiml.svg" alt=""></div></div>
+  <div class="media-featured-thumb" style="background-image: url('/media-thumbnails/twiml.jpg');"></div>
   <div class="media-featured-body">
     <div class="media-featured-kicker">TWIML AI Podcast · 2018</div>
     <h3>Federated ML for Edge Applications</h3>
@@ -361,7 +359,6 @@ A selection of interviews, talks, essays, and press covering over a decade of my
 
 <a class="media-featured-card" href="https://venturebeat.com/transform-2020-video-hub/#/channel/technology-and-automation/ifme4v3rozcu2rtshfxgon3gmrxem6bx" target="_blank" rel="noopener">
   <div class="media-featured-thumb outlet-vb">
-    <div class="tile-corner-logo"><img src="/media-thumbnails/logo-venturebeat.svg" alt=""></div>
     <div class="tile-inner">
       <div class="vb-mark">Venture<span>Beat</span></div>
       <div class="vb-sub">Transform 2020</div>
@@ -378,7 +375,6 @@ A selection of interviews, talks, essays, and press covering over a decade of my
 
 <a class="media-featured-card" href="https://www.oreilly.com/radar/podcast/generative-ai-in-the-real-world-competing-in-a-generative-world-with-justin-norman/" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1">
   <div class="media-featured-thumb outlet-oreilly">
-    <div class="tile-corner-logo"><img src="/media-thumbnails/logo-oreilly.svg" alt=""></div>
     <div class="tile-inner">
       <div class="oreilly-mark">O'REILLY<sup>®</sup></div>
       <div class="oreilly-sub">Radar Podcast</div>
@@ -392,7 +388,7 @@ A selection of interviews, talks, essays, and press covering over a decade of my
 </a>
 
 <a class="media-featured-card" href="https://youtu.be/-sB12gk9ESA?t=2320" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1">
-  <div class="media-featured-thumb" style="background-image: url('/media-thumbnails/pbs-nova.jpg');"><div class="tile-corner-logo"><img src="/media-thumbnails/logo-pbs-nova.svg" alt=""></div></div>
+  <div class="media-featured-thumb" style="background-image: url('/media-thumbnails/pbs-nova.jpg');"></div>
   <div class="media-featured-body">
     <div class="media-featured-kicker">PBS NOVA · 2024</div>
     <h3>A.I. Revolution</h3>
@@ -402,7 +398,6 @@ A selection of interviews, talks, essays, and press covering over a decade of my
 
 <a class="media-featured-card" href="https://twitter.com/jchatterleyCNN/status/1288195360951803907" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1">
   <div class="media-featured-thumb outlet-cnn">
-    <div class="tile-corner-logo"><img src="/media-thumbnails/logo-cnn.svg" alt=""></div>
     <div class="tile-inner">
       <img src="/media-thumbnails/cnn.svg" alt="CNN" class="cnn-mark">
       <div class="cnn-sub">First Move with Julia Chatterley</div>
@@ -416,7 +411,7 @@ A selection of interviews, talks, essays, and press covering over a decade of my
 </a>
 
 <a class="media-featured-card" href="https://twimlai.com/twiml-talk-185-federated-ml-for-edge-applications-with-justin-norman/" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1">
-  <div class="media-featured-thumb" style="background-image: url('/media-thumbnails/twiml.jpg');"><div class="tile-corner-logo"><img src="/media-thumbnails/logo-twiml.svg" alt=""></div></div>
+  <div class="media-featured-thumb" style="background-image: url('/media-thumbnails/twiml.jpg');"></div>
   <div class="media-featured-body">
     <div class="media-featured-kicker">TWIML AI Podcast · 2018</div>
     <h3>Federated ML for Edge Applications</h3>
@@ -426,7 +421,6 @@ A selection of interviews, talks, essays, and press covering over a decade of my
 
 <a class="media-featured-card" href="https://venturebeat.com/transform-2020-video-hub/#/channel/technology-and-automation/ifme4v3rozcu2rtshfxgon3gmrxem6bx" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1">
   <div class="media-featured-thumb outlet-vb">
-    <div class="tile-corner-logo"><img src="/media-thumbnails/logo-venturebeat.svg" alt=""></div>
     <div class="tile-inner">
       <div class="vb-mark">Venture<span>Beat</span></div>
       <div class="vb-sub">Transform 2020</div>
