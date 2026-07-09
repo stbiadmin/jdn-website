@@ -301,13 +301,13 @@ body.media-full-width .col-md-10 {
 .media-item h4 { font-size: 0.98rem; line-height: 1.35; margin: 0 0 0.35rem 0; font-weight: 600; color: #222; }
 .media-item p { font-size: 0.85rem; line-height: 1.5; color: #666; margin: 0; }
 .media-item-logo {
-  max-height: 16px;
-  max-width: 90px;
-  height: auto;
+  height: 20px;
   width: auto;
+  max-width: 150px;
   opacity: 0.75;
   transition: opacity 0.15s;
   flex-shrink: 0;
+  object-fit: contain;
 }
 .media-item:hover .media-item-logo { opacity: 1; }
 @media (max-width: 640px) {
@@ -609,7 +609,7 @@ A selection of interviews, talks, essays, and press covering over a decade of my
 </a>
 
 <a class="media-item" href="https://www.marketplace.org/2020/09/15/pandemic-recovery-for-restaurants-slowing-down/" target="_blank" rel="noopener">
-  <div class="media-item-kicker"><span>Marketplace · 2020</span><img class="media-item-logo" src="/media-thumbnails/logo-marketplace.svg" alt=""></div>
+  <div class="media-item-kicker"><span>Marketplace · 2020</span><img class="media-item-logo" src="/media-thumbnails/logo-marketplace.png" alt=""></div>
   <h4>Pandemic recovery for restaurants is slowing down</h4>
   <p>National radio segment on Yelp-observed recovery trajectories.</p>
 </a>
