@@ -273,8 +273,8 @@ body.media-full-width .col-md-10 {
 
 .media-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.75rem; }
 .media-item {
-  flex: 1 1 310px;
-  max-width: 400px;
+  flex: 0 0 320px;
+  width: 320px;
   padding: 1rem 1.2rem;
   background: #fafafa;
   border-left: 3px solid #2d7a4d;
@@ -311,7 +311,7 @@ body.media-full-width .col-md-10 {
 }
 .media-item:hover .media-item-logo { opacity: 1; }
 @media (max-width: 640px) {
-  .media-item { max-width: none; }
+  .media-item { flex: 1 1 100%; width: 100%; }
   .carousel-arrow { width: 36px; height: 36px; }
 }
 </style>
