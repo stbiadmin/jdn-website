@@ -11,18 +11,25 @@ header:
 ---
 
 <style>
-/* Force the theme's narrow-column ancestors to release constraints while we're on this page */
+/* Constrain the theme's article container to a wide (but centered) max-width
+   so the page title aligns with our content instead of hugging the left edge. */
 body.media-full-width .universal-wrapper,
 body.media-full-width .article-container,
 body.media-full-width main .container,
-body.media-full-width main article,
-body.media-full-width main > div,
+body.media-full-width main > article,
+body.media-full-width main article {
+  max-width: 1400px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  overflow: visible !important;
+}
 body.media-full-width .col-12,
 body.media-full-width .col-lg-8,
-body.media-full-width .col-md-9,
-body.media-full-width .col-md-10,
+body.media-full-width .col-md-8,
 body.media-full-width .col-lg-9,
-body.media-full-width .col-lg-10 {
+body.media-full-width .col-md-9,
+body.media-full-width .col-lg-10,
+body.media-full-width .col-md-10 {
   max-width: 100% !important;
   width: 100% !important;
   flex: 0 0 100% !important;
@@ -33,7 +40,7 @@ body.media-full-width .col-lg-10 {
   width: 100%;
   max-width: 1400px;
   margin: 0 auto;
-  padding: 0 clamp(1rem, 4vw, 3rem);
+  padding: 0 clamp(0.5rem, 2vw, 1.5rem);
   box-sizing: border-box;
 }
 .media-intro {
@@ -66,10 +73,10 @@ body.media-full-width .col-lg-10 {
 
 /* -------- CAROUSEL -------- */
 .media-featured-carousel {
-  overflow: hidden;
   position: relative;
+  overflow: hidden;
   padding: 0.75rem 0;
-  margin: 0 -1rem 2rem;
+  margin: 0 0 2rem;
   -webkit-mask-image: linear-gradient(to right, transparent 0, #000 4%, #000 96%, transparent 100%);
           mask-image: linear-gradient(to right, transparent 0, #000 4%, #000 96%, transparent 100%);
 }
@@ -77,19 +84,48 @@ body.media-full-width .col-lg-10 {
   display: flex;
   gap: 1.5rem;
   width: max-content;
-  animation: media-scroll 55s linear infinite;
   padding: 0 1rem;
+  will-change: transform;
 }
-.media-featured-carousel:hover .media-featured-track {
-  animation-play-state: paused;
+
+/* Arrows */
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 5;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.92);
+  border: 1px solid rgba(0,0,0,0.08);
+  box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+  cursor: pointer;
+  font-size: 1.35rem;
+  line-height: 1;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  transition: background 0.15s, box-shadow 0.15s, transform 0.15s;
+  font-family: inherit;
 }
-@keyframes media-scroll {
-  from { transform: translateX(0); }
-  to   { transform: translateX(-50%); }
+.carousel-arrow-left { left: 0.65rem; }
+.carousel-arrow-right { right: 0.65rem; }
+.carousel-arrow:hover {
+  background: #fff;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+  transform: translateY(-50%) scale(1.08);
+  color: #2d7a4d;
 }
+.carousel-arrow:active {
+  transform: translateY(-50%) scale(0.98);
+}
+.carousel-arrow svg { width: 20px; height: 20px; }
 @media (prefers-reduced-motion: reduce) {
-  .media-featured-track { animation: none; }
   .media-featured-carousel { overflow-x: auto; -webkit-mask-image: none; mask-image: none; }
+  .media-featured-track { transform: none !important; }
 }
 
 /* Cards */
@@ -127,77 +163,23 @@ body.media-full-width .col-lg-10 {
 
 /* Outlet tiles */
 .outlet-oreilly { background: #d84924; }
-.oreilly-mark {
-  font-family: Georgia, 'Times New Roman', serif;
-  font-weight: 700;
-  font-size: 1.7rem;
-  letter-spacing: 0.01em;
-  color: #fff;
-}
+.oreilly-mark { font-family: Georgia, 'Times New Roman', serif; font-weight: 700; font-size: 1.7rem; letter-spacing: 0.01em; color: #fff; }
 .oreilly-mark sup { font-size: 0.55rem; margin-left: 0.1rem; }
-.oreilly-sub {
-  font-size: 0.68rem;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  margin-top: 0.55rem;
-  opacity: 0.9;
-  color: #fff;
-}
+.oreilly-sub { font-size: 0.68rem; letter-spacing: 0.22em; text-transform: uppercase; margin-top: 0.55rem; opacity: 0.9; color: #fff; }
 .outlet-cnn { background: #000; }
-.cnn-mark {
-  width: 100px;
-  height: auto;
-  display: block;
-  margin: 0 auto 0.5rem;
-}
-.cnn-sub {
-  font-family: 'Helvetica Neue', Arial, sans-serif;
-  font-weight: 300;
-  font-size: 1.05rem;
-  letter-spacing: 0.02em;
-  color: #fff;
-}
+.cnn-mark { width: 100px; height: auto; display: block; margin: 0 auto 0.5rem; }
+.cnn-sub { font-family: 'Helvetica Neue', Arial, sans-serif; font-weight: 300; font-size: 1.05rem; letter-spacing: 0.02em; color: #fff; }
 .outlet-vb { background: #131313; }
-.vb-mark {
-  font-family: 'Helvetica Neue', Arial, sans-serif;
-  font-weight: 800;
-  font-size: 1.5rem;
-  letter-spacing: -0.02em;
-  color: #fff;
-}
+.vb-mark { font-family: 'Helvetica Neue', Arial, sans-serif; font-weight: 800; font-size: 1.5rem; letter-spacing: -0.02em; color: #fff; }
 .vb-mark span { color: #ff5233; }
-.vb-sub {
-  font-size: 0.68rem;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  margin-top: 0.55rem;
-  opacity: 0.85;
-  color: #fff;
-}
+.vb-sub { font-size: 0.68rem; letter-spacing: 0.22em; text-transform: uppercase; margin-top: 0.55rem; opacity: 0.85; color: #fff; }
 
 .media-featured-body { padding: 1.15rem 1.3rem 1.4rem; }
-.media-featured-kicker {
-  font-size: 0.68rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: #999;
-  margin-bottom: 0.5rem;
-}
-.media-featured-body h3 {
-  font-size: 1.02rem;
-  line-height: 1.35;
-  margin: 0 0 0.5rem 0;
-  color: #222;
-  font-weight: 600;
-}
-.media-featured-body p {
-  font-size: 0.88rem;
-  line-height: 1.55;
-  color: #666;
-  margin: 0;
-}
+.media-featured-kicker { font-size: 0.68rem; letter-spacing: 0.14em; text-transform: uppercase; color: #999; margin-bottom: 0.5rem; }
+.media-featured-body h3 { font-size: 1.02rem; line-height: 1.35; margin: 0 0 0.5rem 0; color: #222; font-weight: 600; }
+.media-featured-body p { font-size: 0.88rem; line-height: 1.55; color: #666; margin: 0; }
 
-/* -------- TABS + ARCHIVE -------- */
+/* -------- TABS -------- */
 .media-tabs {
   display: flex;
   gap: 0.2rem;
@@ -206,7 +188,11 @@ body.media-full-width .col-lg-10 {
   overflow-x: auto;
   padding: 0;
   -webkit-overflow-scrolling: touch;
+  /* Hide scrollbar */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
+.media-tabs::-webkit-scrollbar { display: none; width: 0; height: 0; }
 .media-tab-btn {
   background: none;
   border: none;
@@ -223,11 +209,8 @@ body.media-full-width .col-lg-10 {
   letter-spacing: 0.02em;
 }
 .media-tab-btn:hover { color: #222; }
-.media-tab-btn.active {
-  color: #2d7a4d;
-  border-bottom-color: #2d7a4d;
-  font-weight: 600;
-}
+.media-tab-btn.active { color: #2d7a4d; border-bottom-color: #2d7a4d; font-weight: 600; }
+
 .media-archive-note {
   font-size: 0.78rem;
   color: #888;
@@ -235,29 +218,19 @@ body.media-full-width .col-lg-10 {
   font-style: italic;
 }
 .media-archive-note::before {
-  content: "↗ ";
+  content: "↓ ";
   color: #2d7a4d;
   font-style: normal;
   font-weight: 600;
   margin-right: 0.15rem;
 }
+
 .media-section { display: none; margin-bottom: 2rem; }
 .media-section.active { display: block; }
-.media-section-title {
-  font-size: 0.72rem;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: #999;
-  margin: 1.4rem 0 0.9rem;
-  font-weight: 600;
-}
+.media-section-title { font-size: 0.72rem; letter-spacing: 0.16em; text-transform: uppercase; color: #999; margin: 1.4rem 0 0.9rem; font-weight: 600; }
 .media-section:first-of-type .media-section-title { margin-top: 0.5rem; }
-.media-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.75rem;
-}
+
+.media-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.75rem; }
 .media-item {
   flex: 1 1 310px;
   max-width: 400px;
@@ -271,46 +244,30 @@ body.media-full-width .col-lg-10 {
   transition: background 0.15s, border-color 0.15s, transform 0.15s;
   box-sizing: border-box;
 }
-.media-item:hover {
-  background: rgba(45,122,77,0.06);
-  border-left-color: #1a5c3d;
-  color: inherit !important;
-  transform: translateX(2px);
-}
-.media-item-kicker {
-  font-size: 0.66rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: #888;
-  margin-bottom: 0.35rem;
-}
-.media-item h4 {
-  font-size: 0.98rem;
-  line-height: 1.35;
-  margin: 0 0 0.35rem 0;
-  font-weight: 600;
-  color: #222;
-}
-.media-item p {
-  font-size: 0.85rem;
-  line-height: 1.5;
-  color: #666;
-  margin: 0;
-}
+.media-item:hover { background: rgba(45,122,77,0.06); border-left-color: #1a5c3d; color: inherit !important; transform: translateX(2px); }
+.media-item-kicker { font-size: 0.66rem; letter-spacing: 0.14em; text-transform: uppercase; color: #888; margin-bottom: 0.35rem; }
+.media-item h4 { font-size: 0.98rem; line-height: 1.35; margin: 0 0 0.35rem 0; font-weight: 600; color: #222; }
+.media-item p { font-size: 0.85rem; line-height: 1.5; color: #666; margin: 0; }
 @media (max-width: 640px) {
   .media-item { max-width: none; }
+  .carousel-arrow { width: 36px; height: 36px; }
 }
 </style>
 
 <div class="media-page">
 
 <div class="media-intro">
-A selection of interviews, talks, essays, and press covering roughly a decade of work in ML and AI — from federated learning at Cloudera Fast Forward Labs, to running data science and product at Yelp during the COVID economic story, to building generative AI systems at Vera AI, to current Berkeley research on deepfakes, facial recognition, and LLM evaluation. Curated, not exhaustive.
+A selection of interviews, talks, essays, and press covering over a decade of my work in ML and AI.
 </div>
 
-<div class="media-h2"><span>Featured</span><span class="media-h2-hint">Hover to pause · click to open</span></div>
+<div class="media-h2"><span>Featured</span><span class="media-h2-hint">Hover to pause · arrows to steer · click to open</span></div>
 
 <div class="media-featured-carousel" aria-label="Featured media carousel">
+
+<button class="carousel-arrow carousel-arrow-left" aria-label="Scroll left" type="button">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+</button>
+
 <div class="media-featured-track">
 
 <a class="media-featured-card" href="https://www.oreilly.com/radar/podcast/generative-ai-in-the-real-world-competing-in-a-generative-world-with-justin-norman/" target="_blank" rel="noopener">
@@ -375,7 +332,7 @@ A selection of interviews, talks, essays, and press covering roughly a decade of
 
 <!-- Duplicated for seamless infinite scroll -->
 
-<a class="media-featured-card" href="https://www.oreilly.com/radar/podcast/generative-ai-in-the-real-world-competing-in-a-generative-world-with-justin-norman/" target="_blank" rel="noopener" aria-hidden="true">
+<a class="media-featured-card" href="https://www.oreilly.com/radar/podcast/generative-ai-in-the-real-world-competing-in-a-generative-world-with-justin-norman/" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1">
   <div class="media-featured-thumb outlet-oreilly">
     <div class="tile-inner">
       <div class="oreilly-mark">O'REILLY<sup>®</sup></div>
@@ -389,7 +346,7 @@ A selection of interviews, talks, essays, and press covering roughly a decade of
   </div>
 </a>
 
-<a class="media-featured-card" href="https://youtu.be/-sB12gk9ESA?t=2320" target="_blank" rel="noopener" aria-hidden="true">
+<a class="media-featured-card" href="https://youtu.be/-sB12gk9ESA?t=2320" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1">
   <div class="media-featured-thumb" style="background-image: url('/media-thumbnails/pbs-nova.jpg');"></div>
   <div class="media-featured-body">
     <div class="media-featured-kicker">PBS NOVA · 2024</div>
@@ -398,7 +355,7 @@ A selection of interviews, talks, essays, and press covering roughly a decade of
   </div>
 </a>
 
-<a class="media-featured-card" href="https://twitter.com/jchatterleyCNN/status/1288195360951803907" target="_blank" rel="noopener" aria-hidden="true">
+<a class="media-featured-card" href="https://twitter.com/jchatterleyCNN/status/1288195360951803907" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1">
   <div class="media-featured-thumb outlet-cnn">
     <div class="tile-inner">
       <img src="/media-thumbnails/cnn.svg" alt="CNN" class="cnn-mark">
@@ -412,7 +369,7 @@ A selection of interviews, talks, essays, and press covering roughly a decade of
   </div>
 </a>
 
-<a class="media-featured-card" href="https://twimlai.com/twiml-talk-185-federated-ml-for-edge-applications-with-justin-norman/" target="_blank" rel="noopener" aria-hidden="true">
+<a class="media-featured-card" href="https://twimlai.com/twiml-talk-185-federated-ml-for-edge-applications-with-justin-norman/" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1">
   <div class="media-featured-thumb" style="background-image: url('/media-thumbnails/twiml.jpg');"></div>
   <div class="media-featured-body">
     <div class="media-featured-kicker">TWIML AI Podcast · 2018</div>
@@ -421,7 +378,7 @@ A selection of interviews, talks, essays, and press covering roughly a decade of
   </div>
 </a>
 
-<a class="media-featured-card" href="https://venturebeat.com/transform-2020-video-hub/#/channel/technology-and-automation/ifme4v3rozcu2rtshfxgon3gmrxem6bx" target="_blank" rel="noopener" aria-hidden="true">
+<a class="media-featured-card" href="https://venturebeat.com/transform-2020-video-hub/#/channel/technology-and-automation/ifme4v3rozcu2rtshfxgon3gmrxem6bx" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1">
   <div class="media-featured-thumb outlet-vb">
     <div class="tile-inner">
       <div class="vb-mark">Venture<span>Beat</span></div>
@@ -436,6 +393,11 @@ A selection of interviews, talks, essays, and press covering roughly a decade of
 </a>
 
 </div>
+
+<button class="carousel-arrow carousel-arrow-right" aria-label="Scroll right" type="button">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+</button>
+
 </div>
 
 <div class="media-tabs">
@@ -532,6 +494,12 @@ A selection of interviews, talks, essays, and press covering roughly a decade of
 <div class="media-section-title">Press &amp; Commentary</div>
 <div class="media-grid">
 
+<a class="media-item" href="https://ccst.us/ccst-launches-california-ai-science-residency/" target="_blank" rel="noopener">
+  <div class="media-item-kicker">CCST · 2025</div>
+  <h4>California AI Science Residency Program on Frontier AI Safety</h4>
+  <p>Appointment as an inaugural AI Science Advisor to CalOES and CDT.</p>
+</a>
+
 <a class="media-item" href="https://vcresearch.berkeley.edu/news/hany-farid-and-i-school-phd-students-featured-pbs-nova" target="_blank" rel="noopener">
   <div class="media-item-kicker">PBS NOVA · 2024</div>
   <h4>Berkeley featured on PBS NOVA's A.I. Revolution</h4>
@@ -544,10 +512,10 @@ A selection of interviews, talks, essays, and press covering roughly a decade of
   <p>Coverage of the Vera AI cohort.</p>
 </a>
 
-<a class="media-item" href="https://ccst.us/ccst-launches-california-ai-science-residency/" target="_blank" rel="noopener">
-  <div class="media-item-kicker">CCST · 2025</div>
-  <h4>California AI Science Residency Program on Frontier AI Safety</h4>
-  <p>Appointment as an inaugural AI Science Advisor to CalOES and CDT.</p>
+<a class="media-item" href="https://www.bloomberg.com/news/articles/2021-01-26/u-s-restaurant-openings-picked-up-pace-in-fourth-quarter-2020" target="_blank" rel="noopener">
+  <div class="media-item-kicker">Bloomberg · 2021</div>
+  <h4>U.S. Restaurant Openings Quicken, Hinting at Rebound</h4>
+  <p>Yelp reopening trends as an early recovery signal.</p>
 </a>
 
 <a class="media-item" href="https://venturebeat.com/2020/07/18/ai-needs-systemic-solutions-to-systemic-bias-injustice-and-inequality/" target="_blank" rel="noopener">
@@ -572,12 +540,6 @@ A selection of interviews, talks, essays, and press covering roughly a decade of
   <div class="media-item-kicker">The Wall Street Journal · 2020</div>
   <h4>140,000 businesses listed on Yelp still closed because of COVID-19</h4>
   <p>Yelp closure data as a leading indicator for the small-business economy.</p>
-</a>
-
-<a class="media-item" href="https://www.bloomberg.com/news/articles/2021-01-26/u-s-restaurant-openings-picked-up-pace-in-fourth-quarter-2020" target="_blank" rel="noopener">
-  <div class="media-item-kicker">Bloomberg · 2021</div>
-  <h4>U.S. Restaurant Openings Quicken, Hinting at Rebound</h4>
-  <p>Yelp reopening trends as an early recovery signal.</p>
 </a>
 
 <a class="media-item" href="https://www.marketplace.org/2020/09/15/pandemic-recovery-for-restaurants-slowing-down/" target="_blank" rel="noopener">
@@ -630,23 +592,96 @@ A selection of interviews, talks, essays, and press covering roughly a decade of
 
 <script>
 (function () {
-  // Add body class so our full-width CSS overrides apply
   document.body.classList.add('media-full-width');
 
-  // Belt-and-suspenders: walk up the DOM and remove max-width constraints
-  // on wrapping ancestors so the carousel can span the full page width.
+  // Belt-and-suspenders: ensure ancestor columns don't cap width
   var page = document.querySelector('.media-page');
   if (page) {
     var el = page.parentElement;
     while (el && el.tagName && el.tagName.toLowerCase() !== 'body') {
-      el.style.maxWidth = 'none';
-      el.style.width = '100%';
+      if (el.classList) {
+        for (var i = 0; i < el.classList.length; i++) {
+          var cls = el.classList[i];
+          if (cls.indexOf('col-') === 0) {
+            el.style.maxWidth = '100%';
+            el.style.flex = '0 0 100%';
+            el.style.width = '100%';
+            break;
+          }
+        }
+      }
       el.style.overflow = 'visible';
       el = el.parentElement;
     }
   }
 
-  // Tab filter
+  // ---------- Carousel ----------
+  var carousel = document.querySelector('.media-featured-carousel');
+  var track    = carousel && carousel.querySelector('.media-featured-track');
+  var leftBtn  = carousel && carousel.querySelector('.carousel-arrow-left');
+  var rightBtn = carousel && carousel.querySelector('.carousel-arrow-right');
+
+  if (carousel && track && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    var offset = 0;
+    var baseSpeed = 0.55;  // px/frame ≈ 33 px/sec — gentle default
+    var currentSpeed = baseSpeed;
+    var half = 0;
+
+    function measure() {
+      // Track width equals two copies of the card set; scroll wraps at half.
+      half = track.scrollWidth / 2;
+    }
+    measure();
+    window.addEventListener('resize', measure);
+    window.addEventListener('load', measure);
+    setTimeout(measure, 300);
+    setTimeout(measure, 1200);
+
+    function tick() {
+      // Pause when a card is hovered (but not when only an arrow is hovered)
+      var hoveredCard = track.querySelector('.media-featured-card:hover');
+      if (!hoveredCard && half > 0) {
+        offset += currentSpeed;
+        if (offset >= half) offset -= half;
+        if (offset < 0) offset += half;
+        track.style.transform = 'translateX(' + (-offset) + 'px)';
+      }
+      requestAnimationFrame(tick);
+    }
+    tick();
+
+    function set(dir) { currentSpeed = dir * 3.5; }
+    function reset()  { currentSpeed = baseSpeed; }
+
+    if (leftBtn) {
+      leftBtn.addEventListener('mouseenter', function () { set(-1); });
+      leftBtn.addEventListener('mouseleave', reset);
+      leftBtn.addEventListener('mousedown',  function () { set(-1); });
+      leftBtn.addEventListener('mouseup',    reset);
+      leftBtn.addEventListener('touchstart', function (e) { e.preventDefault(); set(-1); }, {passive:false});
+      leftBtn.addEventListener('touchend',   reset);
+      leftBtn.addEventListener('click', function (e) {
+        e.preventDefault();
+        offset -= 340;
+        if (offset < 0) offset += half;
+      });
+    }
+    if (rightBtn) {
+      rightBtn.addEventListener('mouseenter', function () { set(1); });
+      rightBtn.addEventListener('mouseleave', reset);
+      rightBtn.addEventListener('mousedown',  function () { set(1); });
+      rightBtn.addEventListener('mouseup',    reset);
+      rightBtn.addEventListener('touchstart', function (e) { e.preventDefault(); set(1); }, {passive:false});
+      rightBtn.addEventListener('touchend',   reset);
+      rightBtn.addEventListener('click', function (e) {
+        e.preventDefault();
+        offset += 340;
+        if (offset >= half) offset -= half;
+      });
+    }
+  }
+
+  // ---------- Tabs ----------
   var buttons = document.querySelectorAll('.media-tab-btn');
   var sections = document.querySelectorAll('.media-section');
   buttons.forEach(function (btn) {
