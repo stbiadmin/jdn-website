@@ -11,10 +11,22 @@ header:
 ---
 
 <style>
-.media-page { max-width: 1080px; margin: 0 auto; }
+/* Break out of the theme's narrow content column and use full page width */
+.media-page {
+  width: 100vw;
+  position: relative;
+  left: calc(-50vw + 50%);
+  padding: 0 clamp(1rem, 5vw, 3.5rem);
+  box-sizing: border-box;
+  max-width: none;
+}
+.media-inner {
+  max-width: 1240px;
+  margin: 0 auto;
+}
 .media-intro {
-  max-width: 720px;
-  margin: 0 auto 3rem;
+  max-width: 760px;
+  margin: 0 auto 2.5rem;
   font-size: 1.05rem;
   line-height: 1.65;
   color: #555;
@@ -24,17 +36,22 @@ header:
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: #888;
-  margin: 3rem 0 1.25rem;
+  margin: 2.5rem 0 1.25rem;
   border-bottom: 1px solid #e5e5e5;
   padding-bottom: 0.6rem;
 }
+
+/* Featured — flex-wrap with center justification so incomplete rows center */
 .media-featured {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 1.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 .media-featured-card {
+  flex: 1 1 260px;
+  max-width: 320px;
   display: flex;
   flex-direction: column;
   background: #fff;
@@ -48,7 +65,7 @@ header:
 }
 .media-featured-card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 28px rgba(0,0,0,0.1);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.12);
   color: inherit !important;
 }
 .media-featured-thumb {
@@ -62,31 +79,63 @@ header:
   padding: 1.4rem;
   text-align: center;
 }
-.media-featured-thumb.outlet-oreilly {
-  background: linear-gradient(135deg, #d64920 0%, #8a2b12 100%);
-}
-.media-featured-thumb.outlet-cnn {
-  background: linear-gradient(135deg, #cc0000 0%, #660000 100%);
-}
-.media-featured-thumb.outlet-vb {
-  background: linear-gradient(135deg, #2864a3 0%, #0e3560 100%);
-}
-.media-thumb-label {
-  font-family: monospace;
-  font-size: 1.15rem;
+.tile-inner { line-height: 1.15; }
+
+/* O'Reilly signature red + serif wordmark */
+.outlet-oreilly { background: #d84924; }
+.oreilly-mark {
+  font-family: Georgia, 'Times New Roman', serif;
   font-weight: 700;
-  line-height: 1.25;
-  letter-spacing: -0.005em;
-  text-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  font-size: 1.7rem;
+  letter-spacing: 0.01em;
+  color: #fff;
 }
-.media-thumb-kicker {
+.oreilly-mark sup { font-size: 0.55rem; margin-left: 0.1rem; }
+.oreilly-sub {
   font-size: 0.68rem;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.22em;
   text-transform: uppercase;
-  opacity: 0.85;
-  margin-bottom: 0.6rem;
+  margin-top: 0.55rem;
+  opacity: 0.9;
+  color: #fff;
 }
-.media-featured-body { padding: 1.25rem 1.4rem 1.5rem; }
+
+/* CNN — black background with real CNN red logo mark */
+.outlet-cnn { background: #000; }
+.cnn-mark {
+  width: 100px;
+  height: auto;
+  display: block;
+  margin: 0 auto 0.5rem;
+}
+.cnn-sub {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 300;
+  font-size: 1.05rem;
+  letter-spacing: 0.02em;
+  color: #fff;
+}
+
+/* VentureBeat — black with two-tone wordmark */
+.outlet-vb { background: #131313; }
+.vb-mark {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 800;
+  font-size: 1.5rem;
+  letter-spacing: -0.02em;
+  color: #fff;
+}
+.vb-mark span { color: #ff5233; }
+.vb-sub {
+  font-size: 0.68rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  margin-top: 0.55rem;
+  opacity: 0.85;
+  color: #fff;
+}
+
+.media-featured-body { padding: 1.15rem 1.3rem 1.4rem; }
 .media-featured-kicker {
   font-size: 0.68rem;
   letter-spacing: 0.14em;
@@ -95,23 +144,25 @@ header:
   margin-bottom: 0.5rem;
 }
 .media-featured-body h3 {
-  font-size: 1.05rem;
+  font-size: 1.02rem;
   line-height: 1.35;
-  margin: 0 0 0.55rem 0;
+  margin: 0 0 0.5rem 0;
   color: #222;
   font-weight: 600;
 }
 .media-featured-body p {
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   line-height: 1.55;
   color: #666;
   margin: 0;
 }
+
+/* Tabs */
 .media-tabs {
   display: flex;
   gap: 0.2rem;
   border-bottom: 1px solid #e5e5e5;
-  margin: 2.5rem 0 1.5rem;
+  margin: 3rem 0 1.75rem;
   overflow-x: auto;
   padding: 0;
   -webkit-overflow-scrolling: touch;
@@ -137,6 +188,21 @@ header:
   border-bottom-color: #2d7a4d;
   font-weight: 600;
 }
+
+.media-archive-note {
+  font-size: 0.78rem;
+  color: #888;
+  margin: 0 0 1.2rem;
+  font-style: italic;
+}
+.media-archive-note::before {
+  content: "↗ ";
+  color: #2d7a4d;
+  font-style: normal;
+  font-weight: 600;
+  margin-right: 0.15rem;
+}
+
 .media-section { display: none; margin-bottom: 2rem; }
 .media-section.active { display: block; }
 .media-section-title {
@@ -144,16 +210,21 @@ header:
   letter-spacing: 0.16em;
   text-transform: uppercase;
   color: #999;
-  margin: 1.5rem 0 0.9rem;
+  margin: 1.4rem 0 0.9rem;
   font-weight: 600;
 }
 .media-section:first-of-type .media-section-title { margin-top: 0.5rem; }
+
+/* Archive — flex-wrap so trailing items center rather than hang */
 .media-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-  gap: 0.7rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
 }
 .media-item {
+  flex: 1 1 310px;
+  max-width: 400px;
   padding: 1rem 1.2rem;
   background: #fafafa;
   border-left: 3px solid #2d7a4d;
@@ -161,12 +232,14 @@ header:
   text-decoration: none !important;
   color: inherit !important;
   display: block;
-  transition: background 0.15s, border-color 0.15s;
+  transition: background 0.15s, border-color 0.15s, transform 0.15s;
+  box-sizing: border-box;
 }
 .media-item:hover {
   background: rgba(45,122,77,0.06);
   border-left-color: #1a5c3d;
   color: inherit !important;
+  transform: translateX(2px);
 }
 .media-item-kicker {
   font-size: 0.66rem;
@@ -189,12 +262,13 @@ header:
   margin: 0;
 }
 @media (max-width: 640px) {
-  .media-featured { grid-template-columns: 1fr; }
-  .media-grid { grid-template-columns: 1fr; }
+  .media-featured-card { max-width: none; }
+  .media-item { max-width: none; }
 }
 </style>
 
 <div class="media-page">
+<div class="media-inner">
 
 <div class="media-intro">
 A selection of interviews, talks, essays, and press covering roughly a decade of work in ML and AI — from federated learning at Cloudera Fast Forward Labs, to running data science and product at Yelp during the COVID economic story, to building generative AI systems at Vera AI, to current Berkeley research on deepfakes, facial recognition, and LLM evaluation. Curated, not exhaustive.
@@ -206,38 +280,38 @@ A selection of interviews, talks, essays, and press covering roughly a decade of
 
 <a class="media-featured-card" href="https://www.oreilly.com/radar/podcast/generative-ai-in-the-real-world-competing-in-a-generative-world-with-justin-norman/" target="_blank" rel="noopener">
   <div class="media-featured-thumb outlet-oreilly">
-    <div>
-      <div class="media-thumb-kicker">O'Reilly Radar</div>
-      <div class="media-thumb-label">Generative AI<br>in the Real World</div>
+    <div class="tile-inner">
+      <div class="oreilly-mark">O'REILLY<sup>®</sup></div>
+      <div class="oreilly-sub">Radar Podcast</div>
     </div>
   </div>
   <div class="media-featured-body">
     <div class="media-featured-kicker">Podcast · 2024</div>
     <h3>Competing in a Generative World</h3>
-    <p>A long-form conversation with Ben Lorica on how product management, evaluation, and moats have shifted since generative AI became the substrate.</p>
+    <p>Long-form conversation with Ben Lorica on how product management, evaluation, and moats have shifted since generative AI became the substrate.</p>
   </div>
 </a>
 
-<a class="media-featured-card" href="https://vcresearch.berkeley.edu/news/hany-farid-and-i-school-phd-students-featured-pbs-nova" target="_blank" rel="noopener">
-  <div class="media-featured-thumb" style="background-image: url('/media-thumbnails/pbs-nova.png');"></div>
+<a class="media-featured-card" href="https://youtu.be/-sB12gk9ESA?t=2320" target="_blank" rel="noopener">
+  <div class="media-featured-thumb" style="background-image: url('/media-thumbnails/pbs-nova.jpg');"></div>
   <div class="media-featured-body">
     <div class="media-featured-kicker">PBS NOVA · 2024</div>
-    <h3>Berkeley I-School featured on PBS NOVA</h3>
-    <p>Featured with Hany Farid on computational approaches to detecting deepfake video and understanding what's real online.</p>
+    <h3>A.I. Revolution</h3>
+    <p>Featured on the PBS NOVA prime-time science documentary on AI, alongside Hany Farid, on detecting and defending against deepfakes.</p>
   </div>
 </a>
 
 <a class="media-featured-card" href="https://twitter.com/jchatterleyCNN/status/1288195360951803907" target="_blank" rel="noopener">
   <div class="media-featured-thumb outlet-cnn">
-    <div>
-      <div class="media-thumb-kicker">CNN</div>
-      <div class="media-thumb-label">First Move<br>with Julia Chatterley</div>
+    <div class="tile-inner">
+      <img src="/media-thumbnails/cnn.svg" alt="CNN" class="cnn-mark">
+      <div class="cnn-sub">First Move with Julia Chatterley</div>
     </div>
   </div>
   <div class="media-featured-body">
     <div class="media-featured-kicker">Live TV · 2020</div>
     <h3>Yelp economic data on CNN's global markets show</h3>
-    <p>Live interview on Yelp's business-closure and reopening data during the pandemic, as part of CNN International's live coverage.</p>
+    <p>Live interview on Yelp's business-closure and reopening data during the pandemic, as part of CNN International's live markets coverage.</p>
   </div>
 </a>
 
@@ -246,21 +320,21 @@ A selection of interviews, talks, essays, and press covering roughly a decade of
   <div class="media-featured-body">
     <div class="media-featured-kicker">TWIML AI Podcast · 2018</div>
     <h3>Federated ML for Edge Applications</h3>
-    <p>On federated machine learning at Cloudera Fast Forward Labs — an early practical framing of a technique that has since become mainstream.</p>
+    <p>Early practical framing of federated learning at Cloudera Fast Forward Labs — a technique that has since become mainstream.</p>
   </div>
 </a>
 
 <a class="media-featured-card" href="https://venturebeat.com/transform-2020-video-hub/#/channel/technology-and-automation/ifme4v3rozcu2rtshfxgon3gmrxem6bx" target="_blank" rel="noopener">
   <div class="media-featured-thumb outlet-vb">
-    <div>
-      <div class="media-thumb-kicker">VentureBeat</div>
-      <div class="media-thumb-label">Transform 2020</div>
+    <div class="tile-inner">
+      <div class="vb-mark">Venture<span>Beat</span></div>
+      <div class="vb-sub">Transform 2020</div>
     </div>
   </div>
   <div class="media-featured-body">
-    <div class="media-featured-kicker">Keynote Talk · 2020</div>
+    <div class="media-featured-kicker">Keynote · 2020</div>
     <h3>Rewards and challenges of building and scaling a custom AI system</h3>
-    <p>Keynote-adjacent talk on running an in-house ML platform at scale, drawn from Yelp's Bunsen experimentation stack.</p>
+    <p>Keynote on running an in-house ML platform at scale, drawn from Yelp's Bunsen experimentation stack.</p>
   </div>
 </a>
 
@@ -273,6 +347,8 @@ A selection of interviews, talks, essays, and press covering roughly a decade of
   <button class="media-tab-btn" data-tab="press">Press &amp; Commentary</button>
   <button class="media-tab-btn" data-tab="writing">Writing</button>
 </div>
+
+<p class="media-archive-note">Click any item to open in a new tab.</p>
 
 <div class="media-section active" data-section="podcasts">
 <div class="media-section-title">Podcasts &amp; Conversations</div>
@@ -287,7 +363,7 @@ A selection of interviews, talks, essays, and press covering roughly a decade of
 <a class="media-item" href="https://twimlai.com/twiml-talk-185-federated-ml-for-edge-applications-with-justin-norman/" target="_blank" rel="noopener">
   <div class="media-item-kicker">TWIML AI Podcast · 2018</div>
   <h4>Federated ML for Edge Applications</h4>
-  <p>Early-days conversation with Sam Charrington on federated learning at Cloudera Fast Forward Labs.</p>
+  <p>With Sam Charrington on federated learning at Cloudera Fast Forward Labs.</p>
 </a>
 
 <a class="media-item" href="https://designingforanalytics.com/resources/episodes/047-how-yelp-integrates-data-science-engineering-ux-and-product-management-when-creating-ai-products-with-yelps-justin-norman/" target="_blank" rel="noopener">
@@ -316,7 +392,7 @@ A selection of interviews, talks, essays, and press covering roughly a decade of
 <div class="media-grid">
 
 <a class="media-item" href="https://www.ischool.berkeley.edu/events/2025/computational-forensics-age-ai" target="_blank" rel="noopener">
-  <div class="media-item-kicker">UC Berkeley I-School · 2025</div>
+  <div class="media-item-kicker">UC Berkeley School of Information · 2025</div>
   <h4>Computational Forensics in the Age of AI</h4>
   <p>Doctoral research lecture on forensic ML and generative-AI risk.</p>
 </a>
@@ -360,8 +436,8 @@ A selection of interviews, talks, essays, and press covering roughly a decade of
 
 <a class="media-item" href="https://vcresearch.berkeley.edu/news/hany-farid-and-i-school-phd-students-featured-pbs-nova" target="_blank" rel="noopener">
   <div class="media-item-kicker">PBS NOVA · 2024</div>
-  <h4>Berkeley I-School faculty and PhD students featured on PBS NOVA</h4>
-  <p>Deepfake detection research with Hany Farid.</p>
+  <h4>Berkeley featured on PBS NOVA's A.I. Revolution</h4>
+  <p>Deepfake detection research with Hany Farid on PBS's flagship science documentary.</p>
 </a>
 
 <a class="media-item" href="https://techcrunch.com/2023/08/30/betaworks-goes-all-in-on-augmentative-ai-in-latest-camp-cohort-were-rabidly-interested/" target="_blank" rel="noopener">
@@ -452,6 +528,7 @@ A selection of interviews, talks, essays, and press covering roughly a decade of
 </div>
 </div>
 
+</div>
 </div>
 
 <script>
