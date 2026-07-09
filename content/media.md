@@ -292,17 +292,17 @@ body.media-full-width .col-md-10 {
 .media-item { position: relative; }
 .media-item-logo {
   position: absolute;
-  top: 0.85rem;
-  right: 0.95rem;
-  height: 18px;
+  bottom: 0.7rem;
+  right: 0.9rem;
+  max-height: 16px;
+  max-width: 80px;
+  height: auto;
   width: auto;
-  max-width: 90px;
-  opacity: 0.62;
+  opacity: 0.5;
   transition: opacity 0.15s;
   pointer-events: none;
 }
-.media-item:hover .media-item-logo { opacity: 1; }
-.media-item.has-logo { padding-right: 110px; }
+.media-item:hover .media-item-logo { opacity: 0.95; }
 @media (max-width: 640px) {
   .media-item { max-width: none; }
   .carousel-arrow { width: 36px; height: 36px; }
