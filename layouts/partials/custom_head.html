@@ -1,4 +1,6 @@
 <style>
-  /* Hide the Wowchemy "Published with..." footer credit */
-  .powered-by { display: none !important; }
+  /* Hide the Wowchemy "Published with..." footer credit only.
+     The theme applies .powered-by to the copyright and CC lines too,
+     so target by the actual wowchemy link inside. */
+  .powered-by:has(a[href*="wowchemy"]) { display: none !important; }
 </style>
