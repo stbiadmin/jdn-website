@@ -75,8 +75,8 @@ highlight_name: true
 
 Hey! I'm Justin Norman.
 
-I'm a AI/ML Engineer and Researcher at UC Berkeley, working with [Hany Farid](https://farid.berkeley.edu/), [Mike Rivera](https://www.ischool.berkeley.edu/people/michael-rivera) and [Alex Hughes](https://d-alex-hughes.github.io/). My research interests include computer vision, generative AI (LLMs and VLMs) and machine learning engineering. I am a recipient of the [Marcus Foster Fellowship](https://bse.berkeley.edu/fellowship-established-honor-dr-marcus-foster) and the [FASPE Design & Technology Fellowship](https://www.faspe-ethics.org/design-technology/).
+I'm a AI/ML Engineer and Researcher at UC Berkeley, working with [Hany Farid](https://farid.berkeley.edu/), [Mike Rivera](https://www.ischool.berkeley.edu/people/michael-rivera) and [Alex Hughes](https://d-alex-hughes.github.io/). My research interests include computer vision, generative AI (LLMs and VLMs) and machine learning engineering.
 
-My PhD projects are focused on deepfake detection, content authenticity, improving the robustness of generative computer vision systems, and LLM hallucination detection, mitigation and prevention.
+My PhD was focused on deepfake detection, content authenticity, improving the robustness of generative computer vision systems, and LLM hallucination detection, mitigation and prevention. I was a recipient of the [Marcus Foster Fellowship](https://bse.berkeley.edu/fellowship-established-honor-dr-marcus-foster) and the [FASPE Design & Technology Fellowship](https://www.faspe-ethics.org/design-technology/).
 
 My latest role in industry is CTO and Head of AI at Vera AI.  Previously I served as VP, Data Science, Analytics and Data Products at Yelp. Before that, I was the Director of Research and ML/AI at Cloudera Fast Forward Labs, Head of Applied Machine Learning at Fitbit, the Global Head of Cisco’s Enterprise Data Science Office and a Big Data Systems Engineer with Booz Allen Hamilton.  In another life, I served as a Marine Corps Officer, with a focus in Systems Analytics and Intelligence. 
