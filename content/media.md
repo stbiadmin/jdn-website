@@ -477,7 +477,6 @@ A selection of interviews, talks, essays, and press covering over a decade of my
 <p class="media-archive-note">Click any item to open in a new tab.</p>
 
 <div class="media-section" data-section="podcasts">
-<div class="media-section-title">Podcasts &amp; Conversations</div>
 <div class="media-grid">
 
 <a class="media-item" href="https://www.oreilly.com/radar/podcast/generative-ai-in-the-real-world-competing-in-a-generative-world-with-justin-norman/" target="_blank" rel="noopener">
@@ -514,7 +513,6 @@ A selection of interviews, talks, essays, and press covering over a decade of my
 </div>
 
 <div class="media-section" data-section="talks">
-<div class="media-section-title">Talks &amp; Lectures</div>
 <div class="media-grid">
 
 <a class="media-item" href="https://www.ischool.berkeley.edu/events/2025/computational-forensics-age-ai" target="_blank" rel="noopener">
@@ -557,7 +555,6 @@ A selection of interviews, talks, essays, and press covering over a decade of my
 </div>
 
 <div class="media-section active" data-section="press">
-<div class="media-section-title">Press &amp; Commentary</div>
 <div class="media-grid">
 
 <a class="media-item" href="https://ccst.us/ccst-launches-california-ai-science-residency/" target="_blank" rel="noopener">
@@ -618,7 +615,6 @@ A selection of interviews, talks, essays, and press covering over a decade of my
 </div>
 
 <div class="media-section" data-section="writing">
-<div class="media-section-title">Writing</div>
 <div class="media-grid">
 
 <a class="media-item" href="https://www.oreilly.com/radar/bringing-an-ai-product-to-market/" target="_blank" rel="noopener">
