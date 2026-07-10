@@ -374,7 +374,7 @@ A selection of interviews, talks, essays, and press covering over a decade of my
   <div class="media-featured-body">
     <div class="media-featured-kicker">TWIML AI Podcast · 2018</div>
     <h3>Federated ML for Edge Applications</h3>
-    <p>Early practical framing of federated learning at Cloudera Fast Forward Labs — a technique that has since become mainstream.</p>
+    <p>Early practical framing of federated learning at Cloudera Fast Forward Labs.</p>
   </div>
 </a>
 
@@ -436,7 +436,7 @@ A selection of interviews, talks, essays, and press covering over a decade of my
   <div class="media-featured-body">
     <div class="media-featured-kicker">TWIML AI Podcast · 2018</div>
     <h3>Federated ML for Edge Applications</h3>
-    <p>Early practical framing of federated learning at Cloudera Fast Forward Labs — a technique that has since become mainstream.</p>
+    <p>Early practical framing of federated learning at Cloudera Fast Forward Labs.</p>
   </div>
 </a>
 
