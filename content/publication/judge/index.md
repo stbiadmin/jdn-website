@@ -8,7 +8,7 @@ authors:
 - D. Alex Hughes
 
 date: "2026-11-05T00:00:00Z"
-doi: "10.48550/arXiv.2606.19544"
+doi: ""
 
 # Schedule page publish date (NOT publication's date).
 publishDate: "2026-06-07T00:00:00Z"
@@ -34,11 +34,11 @@ tags: []
 featured: true
 
 # Custom links (uncomment lines below)
-# links:
-# - name: Webpage
-#   url: ''
+links:
+- name: ResearchGate
+  url: 'https://www.researchgate.net/publication/407288482_Reliability_without_Validity_A_Systematic_Large-Scale_Evaluation_of_LLM-as-a-Judge_Models_Across_Agreement_Consistency_and_Bias'
 
-url_pdf: 'https://arxiv.org/pdf/2606.19544'
+url_pdf: 'https://www.researchgate.net/publication/407288482_Reliability_without_Validity_A_Systematic_Large-Scale_Evaluation_of_LLM-as-a-Judge_Models_Across_Agreement_Consistency_and_Bias'
 url_code: ''
 url_dataset: ''
 url_poster: ''
